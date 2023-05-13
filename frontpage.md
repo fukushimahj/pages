@@ -15,7 +15,7 @@ list_title: my homepage
 
 # Profile
 
-名前: 福島肇 (Hajime Fukushima) 
+<span style="font-size: 120%; color: black;">　名前: 福島肇 (Hajime Fukushima)</span> 
 
 所属: 筑波大学 計算科学研究センター [宇宙物理理論研究室](https://www.rccp.tsukuba.ac.jp/Astro/home/ja/)
 

@@ -15,12 +15,17 @@ list_title: my homepage
 
 # Profile
 
-名前: 福島肇 (Hajime Fukushima) <br>
-所属: 筑波大学 計算科学研究センター [宇宙物理理論研究室](https://www.rccp.tsukuba.ac.jp/Astro/home/ja/)<br>
-身分: 助教 (テニュアトラック) <br>
-住所: 〒305-8577 茨城県つくば市天王台1-1-1 <br>
-メール: fukushima_at_ccs.tsukuba.ac.jp <br>
-研究分野: 主に天体形成 <br>
+名前: 福島肇 (Hajime Fukushima) 
+
+所属: 筑波大学 計算科学研究センター [宇宙物理理論研究室](https://www.rccp.tsukuba.ac.jp/Astro/home/ja/)
+
+身分: 助教 (テニュアトラック) 
+
+住所: 〒305-8577 茨城県つくば市天王台1-1-1 
+
+メール: fukushima_at_ccs.tsukuba.ac.jp 
+
+研究分野: 主に天体形成 
 <br><br>
 
 # ニュース

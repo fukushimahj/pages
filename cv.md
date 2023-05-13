@@ -1,8 +1,7 @@
 ---
-permalink: /
-layout: home
+permalink: /cv
+layout: page
 title: CV
-list_title: my homepage
 ---
 
 # 職歴

@@ -7,13 +7,14 @@ list_title: my homepage
 
 <img src="./assets/imgs/starcluster.png" width="800px">
 
+<span style="font-size: 200%; color: black;">
 主に星形成に関する宇宙物理学についての理論研究をしています。
 最近は、ALMAやJWSTの観測により、銀河系近傍から高赤方偏移銀河まで様々な環境での星形成領域についての研究が急速に進んでいます。
 私たちのグループでは、星からの紫外線光の輻射輸送などを含めたシミュレーションを行うことで、星形成のメカニズムを解明することを目指しています。
 <br><br>
 
 # Profile
-### 名前: 福島肇 (Hajime Fukushima)
+名前: 福島肇 (Hajime Fukushima)
 
 所属: 筑波大学 計算科学研究センター 宇宙物理理論研究室
 
@@ -24,8 +25,8 @@ list_title: my homepage
 メール: fukushima_at_ccs.tsukuba.ac.jp
 
 研究分野: 主に天体形成 (研究についても)
-
 <br><br>
 
 # ニュース
 - 2023年5月　新しいホームページへ以降を開始しました。
+</span>

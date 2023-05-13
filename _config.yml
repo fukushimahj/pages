@@ -19,6 +19,7 @@ minima:
 # Minima: custom header links
 header_pages:
   - frontpage.md
+  - cv.md
 #  - _pages/about.md
 #  - _pages/archive.md
 

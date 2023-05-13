@@ -1,3 +1,10 @@
+---
+permalink: /
+layout: home
+title: CV
+list_title: my homepage
+---
+
 # 職歴
 2022/04/01 - 現在 筑波大学 計算科学研究センター  [宇宙物理理論研究室](https://www.rccp.tsukuba.ac.jp/Astro/home/ja/)  助教 (テニュアトラック)
 

@@ -1,10 +1,8 @@
 ---
-permalink: /
-layout: home
+permalink: /paper
+layout: page
 title: 論文
-list_title: my homepage
 ---
-
 
 # Preprints
 - "The formation of globular clusters with top-heavy initial mass functions", Hajime Fukushima, Hidenobu Yajima, arXiv: [2303.12405](https://arxiv.org/abs/2303.12405)

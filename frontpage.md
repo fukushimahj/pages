@@ -1,7 +1,7 @@
 ---
 permalink: /
 layout: home
-title: 福島肇のページ
+title: Home
 list_title: my homepage
 ---
 

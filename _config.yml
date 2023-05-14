@@ -20,6 +20,7 @@ minima:
 header_pages:
   - frontpage.md
   - cv.md
+  - research.md
   - paper.md
   - prt.md
 #  - _pages/about.md

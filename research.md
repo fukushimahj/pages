@@ -1,3 +1,10 @@
+---
+permalink: /research
+layout: page
+title: 研究
+---
+
+
 <style>
 .column-left{
   float: left;

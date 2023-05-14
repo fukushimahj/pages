@@ -8,12 +8,12 @@ title: 研究
 <style>
 .column-left{
   float: left;
-  width: 47.5%;
+  width: 57.5%;
   text-align: left;
 }
 .column-right{
   float: right;
-  width: 47.5%;
+  width: 37.5%;
   text-align: left;
 }
 .column-one{
@@ -23,10 +23,14 @@ title: 研究
 }
 </style>
 
+# Keywords
+
 <div class="column-left">
 
-# Keywords
-星団形成, 輻射流体力学、輻射フィードバック、大質量星形成、星団形成、ダスト粒子による円偏光生成、などなど
+- 星団形成
+- 輻射流体力学
+- 大質量星形成
+- ダスト粒子による円偏光生成、などなど
 
 </div>
 <div class="column-right">

@@ -34,5 +34,5 @@ list_title: my homepage
 - 2023年5月　新しいホームページへ移行を開始しました。
 
 <div style="text-align: center;">
-<span style="font-size: 120%;">[English](https://sites.google.com/view/fukushimahj-en)</span>
+<span style="font-size: 120%;"><a href="https://sites.google.com/view/fukushimahj-en">English</a></span>
 </div>

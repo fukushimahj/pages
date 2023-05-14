@@ -1,7 +1,7 @@
 ---
 permalink: /
 layout: home
-title: Welcome
+title: Profile
 list_title: my homepage
 ---
 
@@ -12,8 +12,6 @@ list_title: my homepage
 最近は、ALMAやJWSTの観測により、銀河系近傍から高赤方偏移銀河まで様々な環境での星形成領域についての研究が急速に進んでいます。
 私たちのグループでは、星からの紫外線光の輻射輸送などを含めたシミュレーションを行うことで、星形成のメカニズムを解明することを目指しています。
 <br><br>
-
-# Profile
 
 <span style="font-size: 120%; color: black;">名前: 福島　肇 (Hajime Fukushima)</span> 
 

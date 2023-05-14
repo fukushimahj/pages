@@ -4,49 +4,17 @@ layout: page
 title: 研究
 ---
 
-
-<style>
-.column-left{
-  float: left;
-  width: 57.5%;
-  text-align: left;
-}
-.column-right{
-  float: right;
-  width: 37.5%;
-  text-align: left;
-}
-.column-one{
-  float: left;
-  width: 100%;
-  text-align: left;
-}
-</style>
-
 # Keywords
+- 星団形成
+- 輻射流体力学
+- 大質量星形成
+- ダスト粒子による円偏光生成、などなど
 
-<div class="column-left">
 
-星団形成
-  
-輻射流体力学
-
-大質量星形成
-
-ダスト粒子による円偏光生成、などなど
-
-</div>
-<div class="column-right">
-
-<iframe width="400" height="250" src="https://www.youtube.com/embed/BpwGYPvw9g4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-</div>
-
-<div class="column-one">
 # 最近のプロジェクト
 
-**大質量星団形成**
+<span style="font-size: 150%; color: black;">**大質量星団形成**</span>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BpwGYPvw9g4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-++円偏光波生成**
+<span style="font-size: 150%; color: black;">**円偏光波生成**</span>
 
-</div>

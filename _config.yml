@@ -2,6 +2,7 @@ title: 福島肇のページ
 description: My home page
 author: "Hajime Fukushima"
 
+google_analytics: G-FK6NERXM6Y
 theme: minima
 
 base_url: /pages
@@ -38,4 +39,3 @@ exclude:
 #    - LICENSE
 #    - README.md
 
-google_analytics: G-FK6NERXM6Y

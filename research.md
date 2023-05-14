@@ -27,10 +27,13 @@ title: 研究
 
 <div class="column-left">
 
-- 星団形成
-- 輻射流体力学
-- 大質量星形成
-- ダスト粒子による円偏光生成、などなど
+星団形成
+  
+輻射流体力学
+
+大質量星形成
+
+ダスト粒子による円偏光生成、などなど
 
 </div>
 <div class="column-right">
@@ -38,3 +41,11 @@ title: 研究
 <iframe width="400" height="250" src="https://www.youtube.com/embed/BpwGYPvw9g4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 </div>
+
+
+# 最近のプロジェクト
+
+## 大質量星団形成
+
+## 円偏光波生成
+

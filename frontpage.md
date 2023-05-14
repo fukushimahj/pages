@@ -32,6 +32,7 @@ list_title: my homepage
 
 # ニュース
 - 2023年5月　新しいホームページへ移行を開始しました。
+<br><br>
 
 <div style="text-align: center;">
 <span style="font-size: 120%;"><a href="https://sites.google.com/view/fukushimahj-en">English</a></span>

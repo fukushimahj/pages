@@ -20,3 +20,7 @@ title: 活動記録
 
 2022年以前のものは、[resarchmap](https://researchmap.jp/fukushimahj/), [TRIOS](https://trios.tsukuba.ac.jp/researcher/0000004676)に掲載
 
+# 授業
+
+## 2023
+- 課題探求実習セミナー

@@ -2,6 +2,9 @@ title: 福島肇のページ
 description: My home page
 author: "Hajime Fukushima"
 
+plugins:
+  - jekyll-sitemap
+  
 google_analytics: G-FK6NERXM6Y
 theme: minima
 

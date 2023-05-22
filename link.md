@@ -17,3 +17,5 @@ title: リンク
   - [裏夜ゼミ](https://sites.google.com/view/urayoru-seminar/)
 - ノート
   - [Juliaのチュートリアル](https://fukushimahj.github.io/julia_tutolial/)
+- その他
+  - [金言](http://www2.yukawa.kyoto-u.ac.jp/~masaru.shibata/words.html)

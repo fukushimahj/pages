@@ -5,6 +5,7 @@ title: 活動記録
 ---
 
 # 今後の予定
+- 5/29-6/2, [The Olympian Symposium](https://olympiansymposium.org/), "Radiation hydrodynamics simulations of star cluster formation in high-z galaxies"
 
 # 2023
 - 1/26-27, CfCA ユーザーズミーティング, "初代銀河における星団形成シミュレーション: 初期質量関数の導出"

@@ -5,6 +5,7 @@ title: 論文
 ---
 
 # Preprints
+- "Observational signatures of forming young massive clusters: continuum emission from dense HII regions", Mutsuko Inoguchi, Takashi Hosokawa, Hajime Fukushima, Kei E. I. Tanaka, Hidenobu Yajima, Shin Mineshige, arXiv: [2305.19432](https://arxiv.org/abs/2305.19432)
 - "The formation of globular clusters with top-heavy initial mass functions", Hajime Fukushima, Hidenobu Yajima, arXiv: [2303.12405](https://arxiv.org/abs/2303.12405)
 - "3D Radiation-Hydrodynamic Simulations Resolving Interior of Rapidly Accreting Primordial Protostar", Kazutaka Kimura, Takashi Hosokawa, Kazuyuki Sugimura, Hajime Fukushima, [arXiv: 2303.12100](https://arxiv.org/abs/2303.12100)
 - "EMPRESS. XII. Statistics on the Dynamics and Gas Mass Fraction of Extremely-Metal Poor Galaxies", Yi Xu, Masami Ouchi, Yuki Isobe, et al. [arXiv:2303.12467](https://arxiv.org/abs/2303.12467)

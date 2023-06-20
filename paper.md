@@ -15,12 +15,12 @@ title: 論文
 
 **Lead-Author Articles**
 1. "Upper stellar mass limit by radiative feedback at low-metallicities: metallicity and accretion rate dependence", Hajime Fukushima, Kazuyuki Omukai, Takashi Hosokawa, MNRAS, 473, 4754 (2018) ; arXiv: 1710.00470 [astro-ph]; [ADS](https://ui.adsabs.harvard.edu/abs/2018MNRAS.473.4754F/abstract)
-2. "Condition for dust evacuation from the first galaxies", Hajime Fukushima, Hidenobu Yajima, Kazuyuki Omukai, MNRAS, 477, 1071(2018) ; arXiv:1803.09032[astro-ph]
-3. "High circular polarization of near infrared light induced by micron-size dust grains", Hajime Fukushima, Hidenobu Yajima, Masayuki Umemura, MNRAS, 496, 2762 (2020); arXiv:2006.06370
-4. "Formation of massive stars under protostellar radiation feedback: Very metal-poor stars", Hajime Fukushima, Takashi Hosokawa, Gen Chiaki, Kazuyuki Omukai, Naoki Yoshida, Rolf Kuiper, MNRAS, 497, 829 (2020);  arXiv:2004.02364
-5. "Star cluster formation and cloud dispersal by radiative feedback: dependence on metallicity and compactness", Hajime Fukushima, Hidenobu Yajima, Kazuyuki Sugimura, Takashi Hosokawa, Kazuyuki Omukai, Tomoaki Matsumoto, MNRAS, 497, 3830 (2020); arXiv:2005.13401
-6. "Radiation hydrodynamics simulations of massive star cluster formation in giant molecular clouds", Hajime Fukushima, Hidenobu Yajima, MNRAS, 506, 5512 (2021); arXiv:2104.10892
-7. "Far and extreme UV radiation feedback in molecular clouds and its influence on the mass and size of star clusters", Hajime Fukushima, Hidenobu Yajima, MNRAS, 511, 3346 (2022); arXiv: 2201.09995; ADS
+2. "Condition for dust evacuation from the first galaxies", Hajime Fukushima, Hidenobu Yajima, Kazuyuki Omukai, MNRAS, 477, 1071(2018) ; arXiv:1803.09032[astro-ph]; [ADS](https://ui.adsabs.harvard.edu/abs/2018MNRAS.477.1071F/abstract)
+3. "High circular polarization of near infrared light induced by micron-size dust grains", Hajime Fukushima, Hidenobu Yajima, Masayuki Umemura, MNRAS, 496, 2762 (2020); arXiv:2006.06370; [ADS](https://ui.adsabs.harvard.edu/abs/2020MNRAS.496.2762F/abstract)
+4. "Formation of massive stars under protostellar radiation feedback: Very metal-poor stars", Hajime Fukushima, Takashi Hosokawa, Gen Chiaki, Kazuyuki Omukai, Naoki Yoshida, Rolf Kuiper, MNRAS, 497, 829 (2020);  arXiv:2004.02364; [ADS](https://ui.adsabs.harvard.edu/abs/2020MNRAS.497..829F/abstract)
+5. "Star cluster formation and cloud dispersal by radiative feedback: dependence on metallicity and compactness", Hajime Fukushima, Hidenobu Yajima, Kazuyuki Sugimura, Takashi Hosokawa, Kazuyuki Omukai, Tomoaki Matsumoto, MNRAS, 497, 3830 (2020); arXiv:2005.13401; [ADS](https://ui.adsabs.harvard.edu/abs/2020MNRAS.497.3830F/abstract)
+6. "Radiation hydrodynamics simulations of massive star cluster formation in giant molecular clouds", Hajime Fukushima, Hidenobu Yajima, MNRAS, 506, 5512 (2021); arXiv:2104.10892; [ADS](https://ui.adsabs.harvard.edu/abs/2021MNRAS.506.5512F/abstract)
+7. "Far and extreme UV radiation feedback in molecular clouds and its influence on the mass and size of star clusters", Hajime Fukushima, Hidenobu Yajima, MNRAS, 511, 3346 (2022); arXiv: 2201.09995; [ADS](https://ui.adsabs.harvard.edu/abs/2022MNRAS.511.3346F/abstract)
 
 **Co-Author Articles**
 1. "EMPRESS. XI. SDSS and JWST Search for Local and z~4-5 Extremely Metal-Poor Galaxies (EMPGs): Clustering and Chemical Properties of Local EMPGs", Moka Nishigaki, Masami Ouchi, ..., Hajime Fukushima, ..., et al. , arXiv:2302.03158

@@ -28,7 +28,7 @@ title: 論文
 3. "EMPRESS. IX. Extremely Metal-Poor Galaxies are Very Gas-Rich Dispersion-Dominated Systems: Will JWST Witness Gaseous Turbulent High-z Primordial Galaxies?", Yuki Isobe, Masami Ouchi, ..., Hajime Fukushima, ..., Submitted to ApJ; arXiv: 2206.04709
 4. "An unbiased CO survey toward the northern region of the Small Magellanic Cloud with the Atacama compact array. I. Overview: CO cloud distributions", Tokuda Kazuki, Kondo Hiroshi, Ohno Takahiro, ..., Hajime Fukushima, ..., ApJ, 922, 171 (2021);  arXiv: 2108.09018
 5. "FOREVER22: galaxy formation in protocluster regions", Hidenobu Yajima, Makito Abe, Sadegh Khochfar, Kentaro Nagamine, Akio K. Inoue, Tadayuki Kodama, Shohei Arata, Claudio Dalla-Vecchia, Hajime Fukushima, Takuya Hashimoto, Nobunari Kashikawa, Mariko Kubo, Yuexing Li, Yuichi Matsuda, Ken Mawatari , Masami Ouchi, Hideki Umehata, MNRAS, 509, 4037 (2022); arXiv: 2011.11663; ADS
-
+6. "An Unbiased CO Survey Toward the Northern Region of the Small Magellanic Cloud with the Atacama Compact Array. II. CO Cloud Catalog", Takahiro Ohno, Kazuki Tokuda, Ayu Konishi, Takeru Matsumoto, Marta Sewiło, Hiroshi Kondo, Hidetoshi Sano, Kisetsu Tsuge, Sarolta Zahorecz, Nao Goto, Naslim Neelamkodan, Tony Wong, Hajime Fukushima, Tatsuya Takekoshi, Kazuyuki Muraoka, Akiko Kawamura, Kengo Tachihara, Yasuo Fukui, Toshikazu Onishi, ApJ, 949, 63 (2023), [ADS](https://ui.adsabs.harvard.edu/abs/2023ApJ...949...63O/abstract)
 
 
  

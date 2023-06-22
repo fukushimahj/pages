@@ -5,6 +5,7 @@ title: 論文
 ---
 
 # Preprints
+- "Generation of high circular polarization of interstellar Lyman α radiation triggering biological homochirality", Hajime Fukushima, Hidenobu Yajima, Masayuki Umemura, arXiv: [2306.12101](https://arxiv.org/abs/2306.12101)
 - "Observational signatures of forming young massive clusters: continuum emission from dense HII regions", Mutsuko Inoguchi, Takashi Hosokawa, Hajime Fukushima, Kei E. I. Tanaka, Hidenobu Yajima, Shin Mineshige, arXiv: [2305.19432](https://arxiv.org/abs/2305.19432)
 - "The formation of globular clusters with top-heavy initial mass functions", Hajime Fukushima, Hidenobu Yajima, arXiv: [2303.12405](https://arxiv.org/abs/2303.12405)
 - "3D Radiation-Hydrodynamic Simulations Resolving Interior of Rapidly Accreting Primordial Protostar", Kazutaka Kimura, Takashi Hosokawa, Kazuyuki Sugimura, Hajime Fukushima, [arXiv: 2303.12100](https://arxiv.org/abs/2303.12100)

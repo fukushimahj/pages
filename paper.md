@@ -5,10 +5,7 @@ title: 論文
 ---
 
 # Preprints
-- "Generation of high circular polarization of interstellar Lyman α radiation triggering biological homochirality", Hajime Fukushima, Hidenobu Yajima, Masayuki Umemura, arXiv: [2306.12101](https://arxiv.org/abs/2306.12101)
 - "Observational signatures of forming young massive clusters: continuum emission from dense HII regions", Mutsuko Inoguchi, Takashi Hosokawa, Hajime Fukushima, Kei E. I. Tanaka, Hidenobu Yajima, Shin Mineshige, arXiv: [2305.19432](https://arxiv.org/abs/2305.19432)
-- "The formation of globular clusters with top-heavy initial mass functions", Hajime Fukushima, Hidenobu Yajima, arXiv: [2303.12405](https://arxiv.org/abs/2303.12405)
-- "3D Radiation-Hydrodynamic Simulations Resolving Interior of Rapidly Accreting Primordial Protostar", Kazutaka Kimura, Takashi Hosokawa, Kazuyuki Sugimura, Hajime Fukushima, [arXiv: 2303.12100](https://arxiv.org/abs/2303.12100)
 - "EMPRESS. XII. Statistics on the Dynamics and Gas Mass Fraction of Extremely-Metal Poor Galaxies", Yi Xu, Masami Ouchi, Yuki Isobe, et al. [arXiv:2303.12467](https://arxiv.org/abs/2303.12467)
 <br><br>
 
@@ -22,6 +19,9 @@ title: 論文
 5. "Star cluster formation and cloud dispersal by radiative feedback: dependence on metallicity and compactness", Hajime Fukushima, Hidenobu Yajima, Kazuyuki Sugimura, Takashi Hosokawa, Kazuyuki Omukai, Tomoaki Matsumoto, MNRAS, 497, 3830 (2020); arXiv:2005.13401; [ADS](https://ui.adsabs.harvard.edu/abs/2020MNRAS.497.3830F/abstract)
 6. "Radiation hydrodynamics simulations of massive star cluster formation in giant molecular clouds", Hajime Fukushima, Hidenobu Yajima, MNRAS, 506, 5512 (2021); arXiv:2104.10892; [ADS](https://ui.adsabs.harvard.edu/abs/2021MNRAS.506.5512F/abstract)
 7. "Far and extreme UV radiation feedback in molecular clouds and its influence on the mass and size of star clusters", Hajime Fukushima, Hidenobu Yajima, MNRAS, 511, 3346 (2022); arXiv: 2201.09995; [ADS](https://ui.adsabs.harvard.edu/abs/2022MNRAS.511.3346F/abstract)
+8. "The formation of globular clusters with top-heavy initial mass functions", Hajime Fukushima, Hidenobu Yajima, MNRAS, 524, 1422 (2023); arXiv: 2303.12405; [ADS](https://ui.adsabs.harvard.edu/abs/2023MNRAS.524.1422F/abstract)
+9. "Generation of high circular polarization of interstellar Lyman α radiation triggering biological homochirality", Hajime Fukushima, Hidenobu Yajima, Masayuki Umemura, MNRAS, 524, 2114 (2023); arXiv: [2306.12101](https://arxiv.org/abs/2306.12101)
+
 
 **Co-Author Articles**
 1. "EMPRESS. XI. SDSS and JWST Search for Local and z~4-5 Extremely Metal-Poor Galaxies (EMPGs): Clustering and Chemical Properties of Local EMPGs", Moka Nishigaki, Masami Ouchi, ..., Hajime Fukushima, ..., et al. , arXiv:2302.03158
@@ -30,6 +30,7 @@ title: 論文
 4. "An unbiased CO survey toward the northern region of the Small Magellanic Cloud with the Atacama compact array. I. Overview: CO cloud distributions", Tokuda Kazuki, Kondo Hiroshi, Ohno Takahiro, ..., Hajime Fukushima, ..., ApJ, 922, 171 (2021);  arXiv: 2108.09018
 5. "FOREVER22: galaxy formation in protocluster regions", Hidenobu Yajima, Makito Abe, Sadegh Khochfar, Kentaro Nagamine, Akio K. Inoue, Tadayuki Kodama, Shohei Arata, Claudio Dalla-Vecchia, Hajime Fukushima, Takuya Hashimoto, Nobunari Kashikawa, Mariko Kubo, Yuexing Li, Yuichi Matsuda, Ken Mawatari , Masami Ouchi, Hideki Umehata, MNRAS, 509, 4037 (2022); arXiv: 2011.11663; ADS
 6. "An Unbiased CO Survey Toward the Northern Region of the Small Magellanic Cloud with the Atacama Compact Array. II. CO Cloud Catalog", Takahiro Ohno, Kazuki Tokuda, Ayu Konishi, Takeru Matsumoto, Marta Sewiło, Hiroshi Kondo, Hidetoshi Sano, Kisetsu Tsuge, Sarolta Zahorecz, Nao Goto, Naslim Neelamkodan, Tony Wong, Hajime Fukushima, Tatsuya Takekoshi, Kazuyuki Muraoka, Akiko Kawamura, Kengo Tachihara, Yasuo Fukui, Toshikazu Onishi, ApJ, 949, 63 (2023), [ADS](https://ui.adsabs.harvard.edu/abs/2023ApJ...949...63O/abstract)
+7. "3D Radiation-Hydrodynamic Simulations Resolving Interior of Rapidly Accreting Primordial Protostar", Kazutaka Kimura, Takashi Hosokawa, Kazuyuki Sugimura, Hajime Fukushima, ApJ, 950, 184 (2023), arXiv: 2303.12100, [ADS](https://ui.adsabs.harvard.edu/abs/2023ApJ...950..184K/abstract)
 
 
  

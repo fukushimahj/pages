@@ -1,7 +1,7 @@
 ---
 permalink: /
 layout: home
-title: Profile
+title: 
 list_title: my homepage
 ---
 

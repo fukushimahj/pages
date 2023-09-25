@@ -8,7 +8,14 @@ title: 活動記録
 
 
 # 2023
-- 5/29-6/2, [The Olympian Symposium](https://olympiansymposium.org/), "Radiation hydrodynamics simulations of star cluster formation in high-z galaxies"
+- 天文学会2023秋季年会 (9/20-22)
+  - "宇宙初期の超大質量星形成における星周円盤と原始星構造の共進化", 木村和貴 (東北大学), 細川隆史 (京都大学), 杉村和幸 (北海道大学), 福島肇 (筑波大学), 大向一行 (東北
+大学)
+  - "乱流中の異なる星形成環境での分子雲コアの形成・進化", 野崎信吾 (九州大学), 福島肇 (筑波大学), 町田正博 (九州大学)
+  - "初期宇宙での Bondi-Hoyle-Lyttleton 降着機構による中質量ブラックホールの進化", 尾形絵梨花, 大須賀健, 福島肇, 矢島秀伸 (筑波大学)
+  - "種族 III 星が混在する初代銀河の形成過程", 矢島 秀伸, 安部 牧人, 福島 肇 (筑波大学)
+  - "ALMA ACA による小マゼラン雲超広域 CO 探査 (4):N83/N84/N86 領域 12CO,13CO (J=2–1) 輝線データ解析", 松本健, 小西亜侑, 北野尚弥, 國年悠里, 村岡和幸, 大西利和 (大阪公立大学), 徳田一起 (九州大学/国立天文台), 大野峻宏, 立原研悟, 福井康雄 (名古屋大学), 柘植紀節 (東京大学), 佐野栄俊 (岐阜大学), 河村晶子 (国立天文台), 福島肇 (筑波大学), 竹腰達哉 (北見工業大学), 小林将人 (国立天文台
+-  5/29-6/2, [The Olympian Symposium](https://olympiansymposium.org/), "Radiation hydrodynamics simulations of star cluster formation in high-z galaxies"
 - 4/10-15, Protostars and Planets VII, "Conditions for young massive star cluster formation" (poster)
 - 天文学会2023春季年会 (3/13-16)
   - "初代銀河における星団形成シミュレーション: 初期質量関数", 福島肇, 安部牧人, 矢島秀伸 (筑波大学)

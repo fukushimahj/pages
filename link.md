@@ -17,4 +17,6 @@ title: リンク
   - [裏夜ゼミ](https://sites.google.com/view/urayoru-seminar/)
 - ノート
   - [Juliaのチュートリアル](https://fukushimahj.github.io/julia_tutolial/)
+- 授業関連
+  - [流体力学(23)](https://fukushimahj.github.io/fluid_dynamics/)
 - その他

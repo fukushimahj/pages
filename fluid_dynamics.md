@@ -5,5 +5,6 @@ title: 流体力学('23)
 ---
 
 # 資料
-- 授業ノート(未完成版)
-  - (1章: ) 
+- 授業ノート(改訂中)
+  - (1章)[https://fukushimahj.github.io/pages/PDFs/chap1.pdf] 
+  - (2章)[https://fukushimahj.github.io/pages/PDFs/chap2.pdf] 

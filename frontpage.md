@@ -13,14 +13,20 @@ list_title: my homepage
 私たちのグループでは、星からの紫外線光の輻射輸送などを含めたシミュレーションを行うことで、星形成のメカニズムを解明することを目指しています。
 <br>
 
-<span style="font-size: 120%; color: black;">名前: 福島　肇 (Hajime Fukushima)</span><br> 
-<span style="font-size: 120%; color: black;">所属: 筑波大学 計算科学研究センター [宇宙物理理論研究室](https://www.rccp.tsukuba.ac.jp/Astro/home/ja/)</span> <br>
-<span style="font-size: 120%; color: black;">身分: 助教 (テニュアトラック)</span> <br>
-<span style="font-size: 120%; color: black;">住所: 〒305-8577 茨城県つくば市天王台1-1-1</span> <br>
-<span style="font-size: 120%; color: black;">メール: fukushima_at_ccs.tsukuba.ac.jp</span> <br>
-<span style="font-size: 120%; color: black;">研究分野: 主に天体形成</span> <br>
+<span style="font-size: 120%; color: black;">名前: 福島　肇 (Hajime Fukushima)</span> 
+
+<span style="font-size: 120%; color: black;">所属: 筑波大学 計算科学研究センター [宇宙物理理論研究室](https://www.rccp.tsukuba.ac.jp/Astro/home/ja/)</span> 
+
+<span style="font-size: 120%; color: black;">身分: 助教 (テニュアトラック)</span> 
+
+<span style="font-size: 120%; color: black;">住所: 〒305-8577 茨城県つくば市天王台1-1-1</span> 
+
+<span style="font-size: 120%; color: black;">メール: fukushima_at_ccs.tsukuba.ac.jp</span> 
+
+<span style="font-size: 120%; color: black;">研究分野: 主に天体形成</span> 
+
 <span style="font-size: 120%; color: black;">業績等: [researchmap](https://researchmap.jp/fukushimahj/), [ADS](https://ui.adsabs.harvard.edu/search/fq=%7B!type%3Daqp%20v%3D%24fq_database%7D&fq_database=database%3A%20astronomy&p_=0&q=pubdate%3A%5B2018-01%20TO%209999-12%5D%20author%3A(%22%5EFukushima%2C%20hajime%22)&sort=date%20desc%2C%20bibcode%20desc?bbbRedirect=1), [TRIOS](https://trios.tsukuba.ac.jp/researcher/0000004676)</span> <br> 
-<br>
+
 
 # ニュース
 - 2023年5月　新しいホームページへ移行を開始しました。

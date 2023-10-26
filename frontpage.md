@@ -29,7 +29,8 @@ list_title: my homepage
 
 
 # ニュース
-- 2023年5月　新しいホームページへ移行を開始しました。
+- 23.10.26  研究紹介について[CCS広報インタビュー記事](https://www.ccs.tsukuba.ac.jp/research-topic-v13/)を作成していただきました。
+- 23.05.12　新しいホームページへ移行を開始しました。
 <br>
 
 <div style="text-align: center;">

@@ -1,7 +1,7 @@
 ---
 permalink: /cv
 layout: page
-title: プロフィール/CV
+title: CV
 ---
 
 # 所属・連絡先

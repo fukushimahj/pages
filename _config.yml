@@ -23,10 +23,10 @@ minima:
 # Minima: custom header links
 header_pages:
   - frontpage.md
+  - cv.md
   - research.md
   - paper.md
   - prt.md
-  - cv.md
   - link.md
 #  - _pages/about.md
 #  - _pages/archive.md

@@ -5,9 +5,7 @@ title: 論文
 ---
 
 # Preprints
-- "Observational signatures of forming young massive clusters: continuum emission from dense HII regions", Mutsuko Inoguchi, Takashi Hosokawa, Hajime Fukushima, Kei E. I. Tanaka, Hidenobu Yajima, Shin Mineshige, arXiv: [2305.19432](https://arxiv.org/abs/2305.19432)
 - "EMPRESS. XII. Statistics on the Dynamics and Gas Mass Fraction of Extremely-Metal Poor Galaxies", Yi Xu, Masami Ouchi, Yuki Isobe, et al. [arXiv:2303.12467](https://arxiv.org/abs/2303.12467)
-- "JWST Identification of Extremely Low C/N Galaxies with [N/O]≳0.5 at z∼6−10 Evidencing the Early CNO-Cycle Enrichment and a Connection with Globular Cluster Formation", Yuki Isobe, Masami Ouchi, ..., HF, et al. arXiv: [2307.00710](https://arxiv.org/abs/2307.00710)
 <br><br>
 
 # Published in refereed journals
@@ -32,6 +30,7 @@ title: 論文
 5. "FOREVER22: galaxy formation in protocluster regions", Hidenobu Yajima, Makito Abe, Sadegh Khochfar, Kentaro Nagamine, Akio K. Inoue, Tadayuki Kodama, Shohei Arata, Claudio Dalla-Vecchia, Hajime Fukushima, Takuya Hashimoto, Nobunari Kashikawa, Mariko Kubo, Yuexing Li, Yuichi Matsuda, Ken Mawatari , Masami Ouchi, Hideki Umehata, MNRAS, 509, 4037 (2022); arXiv: 2011.11663; ADS
 6. "An Unbiased CO Survey Toward the Northern Region of the Small Magellanic Cloud with the Atacama Compact Array. II. CO Cloud Catalog", Takahiro Ohno, Kazuki Tokuda, Ayu Konishi, Takeru Matsumoto, Marta Sewiło, Hiroshi Kondo, Hidetoshi Sano, Kisetsu Tsuge, Sarolta Zahorecz, Nao Goto, Naslim Neelamkodan, Tony Wong, Hajime Fukushima, Tatsuya Takekoshi, Kazuyuki Muraoka, Akiko Kawamura, Kengo Tachihara, Yasuo Fukui, Toshikazu Onishi, ApJ, 949, 63 (2023), [ADS](https://ui.adsabs.harvard.edu/abs/2023ApJ...949...63O/abstract)
 7. "3D Radiation-Hydrodynamic Simulations Resolving Interior of Rapidly Accreting Primordial Protostar", Kazutaka Kimura, Takashi Hosokawa, Kazuyuki Sugimura, Hajime Fukushima, ApJ, 950, 184 (2023), arXiv: 2303.12100, [ADS](https://ui.adsabs.harvard.edu/abs/2023ApJ...950..184K/abstract)
-
+8. "JWST Identification of Extremely Low C/N Galaxies with [N/O]≳0.5 at z∼6−10 Evidencing the Early CNO-Cycle Enrichment and a Connection with Globular Cluster Formation", Yuki Isobe, Masami Ouchi, ..., HF, et al., ApJ, 959, 2, 16 (2023), [ADS](https://ui.adsabs.harvard.edu/abs/2023ApJ...959..100I/abstract), arXiv: [2307.00710](https://arxiv.org/abs/2307.00710)
+9. "Observational signatures of forming young massive clusters: continuum emission from dense HII regions", Mutsuko Inoguchi, Takashi Hosokawa, Hajime Fukushima, Kei E. I. Tanaka, Hidenobu Yajima, Shin Mineshige, MNRAS, 527, 3612, [ADS](https://ui.adsabs.harvard.edu/abs/2024MNRAS.527.3612I/abstract), arXiv: [2305.19432](https://arxiv.org/abs/2305.19432)
 
  

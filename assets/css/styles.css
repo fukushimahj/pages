@@ -1,9 +1,11 @@
 ---
 ---
 
-@import 
-  "minima/skins/{{ site.minima.skin | default: 'dark'}}",
-  "minima/initialize";
+@import "{{ site.theme }}";
+
+.inner {
+  max-width: 120%;
+}
 
 .wrapper {
   width:1200px;

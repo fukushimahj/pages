@@ -13,6 +13,10 @@ list_title: my homepage
 私たちのグループでは、星からの紫外線光の輻射輸送などを含めたシミュレーションを行うことで、星形成のメカニズムを解明することを目指しています。
 <br><br>
 
+# 連絡先
+
+住所: 〒305-8577 茨城県つくば市天王台1-1-1 筑波大学 計算科学研究センター <br>
+メール: fukushima_at_ccs.tsukuba.ac.jp <br><br>
 
 # ニュース
 - 23.10.26  [CCS広報インタビュー記事](https://www.ccs.tsukuba.ac.jp/research-topic-v13/)を作成していただきました。

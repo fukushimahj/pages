@@ -2,8 +2,8 @@
 ---
 
 @import 
-  "{{ site.theme }}",
-  "minima/skins/{{ site.minima.skin | default: 'dark'}}";
+  "minima/skins/{{ site.minima.skin | default: 'dark'}}",
+  "minima/initialize";
 
 .wrapper {
   width:1200px;

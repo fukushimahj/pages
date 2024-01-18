@@ -1,7 +1,9 @@
 ---
 ---
 
-@import "{{ site.theme }}";
+@import 
+  "{{ site.theme }}",
+  "minima/skins/{{ site.minima.skin | default: 'dark'}}";
 
 .wrapper {
   width:1200px;

@@ -5,7 +5,7 @@ title:
 list_title: my homepage
 ---
 
-<img src="./assets/imgs/starcluster.png" width="800px">
+<img src="./assets/imgs/starcluster.png" width="1000px">
 
 
 主に星形成に関する宇宙物理学についての理論研究をしています。

@@ -1,12 +1,14 @@
 ---
 ---
 
+$content-width: 70%;
+
 @import "minima";
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 body {
     font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
     color: #383838;
 }
 
-$base-font-size:   22px !default;

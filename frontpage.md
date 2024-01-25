@@ -9,7 +9,7 @@ list_title: my homepage
 .center_b{
 width: 1000px;
 text-align: left;
-margin: 20px 200px 20px 200px;
+margin: 20px 300px 20px 300px;
 }
 .center_b2{
 width: 1000px;

@@ -5,9 +5,7 @@ title:
 list_title: my homepage
 ---
 
-<div style="text-align: center;">
 <img src="./assets/imgs/taki.png" width="1000px">
-</div>
 
 主に星形成に関する宇宙物理学についての理論研究をしています。
 最近は、ALMAやJWSTの観測により、銀河系近傍から高赤方偏移銀河まで様々な環境での星形成領域についての研究が急速に進んでいます。

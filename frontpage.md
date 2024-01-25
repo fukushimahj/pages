@@ -27,8 +27,14 @@ list_title: my homepage
     <br>23.10.26  <a href="https://www.ccs.tsukuba.ac.jp/research-topic-v13/">CCS広報インタビュー記事</a>を作成していただきました。
     <br>23.05.12　新しいホームページへ移行を開始しました。
     <br>
+    <br>
     
-    <div style="text-align: center;">
-    <span style="font-size: 120%;"><a href="https://sites.google.com/view/fukushimahj-en">English</a></span>
-    </div>
+    <span style="font-size: 120%;">
+        <a href="https://fukushimahj.github.io/pages/cv">CV</a> &nbsp;
+        <a href="https://fukushimahj.github.io/pages/research">研究</a> &nbsp;
+        <a href="https://fukushimahj.github.io/pages/paper">論文</a> &nbsp;
+        <a href="https://fukushimahj.github.io/pages/prt">活動記録</a> &nbsp;
+        <a href="https://fukushimahj.github.io/pages/link">リンク</a> &nbsp;
+        <a href="https://sites.google.com/view/fukushimahj-en">English</a>
+    </span>
 </div>

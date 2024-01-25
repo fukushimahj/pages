@@ -24,7 +24,7 @@ list_title: my homepage
     メール: fukushima_at_ccs.tsukuba.ac.jp <br><br>
     
     <span style="font-size: 150%;"> ニュース </span>
-    <br>23.10.26  <a href="https://www.ccs.tsukuba.ac.jp/research-topic-v13/">CCS広報インタビュー記事</a>を作成していただきました。
+    <br>23.10.26　<a href="https://www.ccs.tsukuba.ac.jp/research-topic-v13/">CCS広報インタビュー記事</a>を作成していただきました。
     <br>23.05.12　新しいホームページへ移行を開始しました。
     <br>
     <br>

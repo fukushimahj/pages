@@ -13,8 +13,8 @@ margin: 20px 100px 20px 100px;
 }
 .center_b2{
 width: 1000px;
-text-align: left;
-margin: 20px 200px 20px 200px;
+text-align: center;
+margin: 0px 0px 0px 0px;
 }
 </style>
 

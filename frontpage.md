@@ -11,9 +11,9 @@ list_title: my homepage
 
 <style>
 .center_b{
-width: 400px;
+width: 600px;
 text-align: left;
-margin: 0px 300px 0px 300px;
+margin: 0px 200px 0px 200px;
 }
 </style>
 <div class="center_b">
@@ -23,8 +23,6 @@ margin: 0px 300px 0px 300px;
     筑波大学　計算科学研究センター　宇宙物理研究部門
     <br>
     <br>
-</div>
-
 
     <span style="font-size: 150%;"> 連絡先 </span><br>
     
@@ -40,3 +38,5 @@ margin: 0px 300px 0px 300px;
     <span style="font-size: 150%;">
         <a href="https://sites.google.com/view/fukushimahj-en">English</a>
     </span>
+
+</div>

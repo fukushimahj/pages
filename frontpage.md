@@ -6,11 +6,11 @@ list_title: my homepage
 ---
 
 <div style="text-align: center;">
-<img src="./assets/imgs/taki.png" width="1200px">
+<img src="./assets/imgs/taki.png" width="1000px">
 </div>
 
 
-<div style="width: 40em;">
+<div style="width: 60em;">
     <br>
     <span style="font-size: 150%;"> 福島　肇 (Hajime FUKUSHIMA) </span>
     <br>

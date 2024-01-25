@@ -9,8 +9,8 @@ list_title: my homepage
 <img src="./assets/imgs/taki.png" width="1000px">
 </div>
 
-
-<div style="width: 30em;">
+<center>
+<div style="width: 40em;">
     <br>
     <span style="font-size: 150%;"> 福島　肇 (Hajime FUKUSHIMA) </span>
     <br>
@@ -33,3 +33,4 @@ list_title: my homepage
         <a href="https://sites.google.com/view/fukushimahj-en">English</a>
     </span>
 </div>
+</center>

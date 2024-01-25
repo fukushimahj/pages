@@ -10,7 +10,7 @@ list_title: my homepage
 </div>
 
 
-<div style="width: 40em; text-align: center;">
+<div style="width: 40em;">
     <br>
     <span style="font-size: 150%;"> 福島　肇 (Hajime FUKUSHIMA) </span>
     <br>

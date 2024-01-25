@@ -11,9 +11,10 @@ list_title: my homepage
 
 <div style="width: 60em;">
     <br><br>
-    <span style="font-size: 150%; color: black;">福島　肇 </span>
     
+    # 福島　肇 (Hajime FUKUSHIMA)
     <br>
+    筑波大学　計算科学研究センター　宇宙物理研究部門
     <br>
     
     # 連絡先

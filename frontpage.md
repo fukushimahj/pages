@@ -9,15 +9,23 @@ list_title: my homepage
 <img src="./assets/imgs/taki.png" width="1000px">
 </div>
 
-<center>
-<div style="width: 50em; text-align: left;">
+<style>
+.center_b{
+width: 400px;
+text-align: left;
+margin: 0px 300px 0px 300px;
+}
+</style>
+<div class="center_b">
     <br>
     <span style="font-size: 150%;"> 福島　肇 (Hajime FUKUSHIMA) </span>
     <br>
     筑波大学　計算科学研究センター　宇宙物理研究部門
     <br>
     <br>
-    
+</div>
+
+
     <span style="font-size: 150%;"> 連絡先 </span><br>
     
     住所: 〒305-8577 茨城県つくば市天王台1-1-1 筑波大学 計算科学研究センター <br>
@@ -32,5 +40,3 @@ list_title: my homepage
     <span style="font-size: 150%;">
         <a href="https://sites.google.com/view/fukushimahj-en">English</a>
     </span>
-</div>
-</center>

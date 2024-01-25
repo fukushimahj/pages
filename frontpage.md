@@ -7,18 +7,22 @@ list_title: my homepage
 
 <style>
 .center_b{
+width: 800px;
+text-align: left;
+margin: 20px 100px 20px 100px;
+}
+.center_b2{
 width: 1000px;
 text-align: left;
 margin: 20px 200px 20px 200px;
 }
 </style>
 
-
-<div class="center_b">
+<div class="center_b2">
     <div style="text-align: center;">
     <img src="./assets/imgs/taki.png" width="1000px">
     </div>
-
+<div class="center_b">
     <br>
     <span style="font-size: 150%;"> 福島　肇 (Hajime FUKUSHIMA) </span>
     <br>
@@ -40,5 +44,5 @@ margin: 20px 200px 20px 200px;
     <span style="font-size: 150%;">
         <a href="https://sites.google.com/view/fukushimahj-en">English</a>
     </span>
-
+</div>
 </div>

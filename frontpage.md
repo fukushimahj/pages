@@ -7,9 +7,9 @@ list_title: my homepage
 
 <style>
 .center_b{
-width: 800px;
+width: 1000px;
 text-align: left;
-margin: 20px 100px 20px 100px;
+margin: 20px 200px 20px 200px;
 }
 .center_b2{
 width: 1000px;

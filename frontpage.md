@@ -10,8 +10,7 @@ list_title: my homepage
 </div>
 
 <div style="width: 60em;">
-    <br><br>
-    
+    <br>
     <span style="font-size: 150%;"> 福島　肇 (Hajime FUKUSHIMA) </span>
     <br>
     筑波大学　計算科学研究センター　宇宙物理研究部門
@@ -29,12 +28,7 @@ list_title: my homepage
     <br>
     <br>
     
-    <span style="font-size: 120%;">
-        <a href="https://fukushimahj.github.io/pages/cv">CV</a> &nbsp;
-        <a href="https://fukushimahj.github.io/pages/research">研究</a> &nbsp;
-        <a href="https://fukushimahj.github.io/pages/paper">論文</a> &nbsp;
-        <a href="https://fukushimahj.github.io/pages/prt">活動記録</a> &nbsp;
-        <a href="https://fukushimahj.github.io/pages/link">リンク</a> &nbsp;
+    <span style="font-size: 150%;">
         <a href="https://sites.google.com/view/fukushimahj-en">English</a>
     </span>
 </div>

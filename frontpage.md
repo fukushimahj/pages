@@ -20,9 +20,10 @@ margin: 0px auto 0px auto;
 
 <div class="center_b2">
     <div style="text-align: center;">
-    <img src="./assets/imgs/taki.png" width="800px">
+    <img src="./assets/imgs/taki.png" width="1000px">
     </div>
 <div class="center_b">
+    <br>
     <span style="font-size: 150%;"> 福島　肇 (Hajime FUKUSHIMA) </span>
     <br>
     筑波大学　計算科学研究センター　宇宙物理研究部門

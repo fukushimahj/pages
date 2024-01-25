@@ -14,7 +14,7 @@ margin: 20px 250px 20px 250px;
 .center_b2{
 width: 1000px;
 text-align: center;
-margin: 0px 0px 0px 0px;
+margin: 0px auto 0px auto;
 }
 </style>
 

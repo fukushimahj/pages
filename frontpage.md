@@ -12,7 +12,7 @@ text-align: center;
 margin: 0px 0px 0px 0px;
 }
 .center_b3{
-width: 1000pc;
+width: 1000px;
 text-align: left;
 margin: 0px 175px 0px 175px;
 }

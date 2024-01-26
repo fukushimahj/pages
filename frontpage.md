@@ -14,7 +14,7 @@ margin: 0px 0px 0px 0px;
 .center_b3{
 width: 1000pc;
 text-align: left;
-margin: 0px 200px 0px 200px;
+margin: 0px 175px 0px 175px;
 }
 .center_b2{
 width: 1000px;
@@ -37,14 +37,12 @@ margin: 0px auto 0px auto;
         <br>
         <br>
         <br>
-        <br>
     </div>
     <div class="center_b3">
         <span style="font-size: 150%;"> 連絡先 </span><br>
     
         住所: 〒305-8577 茨城県つくば市天王台1-1-1 筑波大学 計算科学研究センター <br>
         メール: fukushima_at_ccs.tsukuba.ac.jp 
-        <br>
         <br>
         <br>
     

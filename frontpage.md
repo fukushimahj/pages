@@ -8,13 +8,13 @@ list_title: my homepage
 <style>
 .center_b{
 width: 1000px;
-text-align: left;
-margin: 0px 250px 0px 250px;
+text-align: center;
+margin: 0px 0px 0px 0px;
 }
 .center_b3{
 width: 1000pc;
 text-align: left;
-margin: 0px 100px 0px 100px;
+margin: 0px 150px 0px 150px;
 }
 .center_b2{
 width: 1000px;
@@ -29,7 +29,7 @@ margin: 0px auto 0px auto;
     </div>
     <div class="center_b">
         <br>
-        <span style="font-size: 200%;"> 福島　肇  </span>
+        <span style="font-size: 250%;"> 福島　肇  </span>
         <br>
         (Hajime FUKUSHIMA)
         <br>

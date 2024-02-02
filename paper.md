@@ -32,5 +32,6 @@ title: 論文
 7. "3D Radiation-Hydrodynamic Simulations Resolving Interior of Rapidly Accreting Primordial Protostar", Kazutaka Kimura, Takashi Hosokawa, Kazuyuki Sugimura, Hajime Fukushima, ApJ, 950, 184 (2023), arXiv: 2303.12100, [ADS](https://ui.adsabs.harvard.edu/abs/2023ApJ...950..184K/abstract)
 8. "JWST Identification of Extremely Low C/N Galaxies with [N/O]≳0.5 at z∼6−10 Evidencing the Early CNO-Cycle Enrichment and a Connection with Globular Cluster Formation", Yuki Isobe, Masami Ouchi, ..., HF, et al., ApJ, 959, 2, 16 (2023), [ADS](https://ui.adsabs.harvard.edu/abs/2023ApJ...959..100I/abstract), arXiv: [2307.00710](https://arxiv.org/abs/2307.00710)
 9. "Observational signatures of forming young massive clusters: continuum emission from dense HII regions", Mutsuko Inoguchi, Takashi Hosokawa, Hajime Fukushima, Kei E. I. Tanaka, Hidenobu Yajima, Shin Mineshige, MNRAS, 527, 3612, [ADS](https://ui.adsabs.harvard.edu/abs/2024MNRAS.527.3612I/abstract), arXiv: [2305.19432](https://arxiv.org/abs/2305.19432)
+10. "Three-dimensional radiation hydrodynamics simulations of wandering intermediate-mass black holes considering the anisotropic radiation and dust sublimation", Erika Ogata, Ken Ohsuga, Hajime Fukushima, Hidenobu Yajima, MNRAS, 528, 2588 (2024), arXiv:[2402.00369](https://arxiv.org/abs/2402.00369)
 
  

@@ -7,6 +7,7 @@ title: 活動記録
 # 今後の予定
 
 # 2024
+- 2/28-3/2, [ブラックホール大研究会](https://www2.ccs.tsukuba.ac.jp/Astro/conferences/domestic/ja/2024/02/28/bh-workshop/), "高密度星団形成シミュレーション"
 - 2/16-17, [第12回宇宙における生命ワークショップ](https://exoplanet.mtk.nao.ac.jp/workshop/2024Feb_ABCpro_satWS.html), "星形成雲における
 ラインマンアルファ円偏光波生成" 
 - 2/5-7, [次世代のサブミリ波観測とシミュレーションの計画検討会](https://sites.google.com/view/tyt-galaxy-formation-workshop/home), "星風による金属量進化を考慮した銀河円盤シミュレーション"

@@ -5,6 +5,7 @@ title: 論文
 ---
 
 # Preprints
+- "Impacts of stellar wind and supernovae on the star cluster formation: origins of extremely high N/O ratios and multiple stellar populations", Hajime Fukushima, Hidenobu Yajima, [arXiv:2404.10535](https://arxiv.org/abs/2404.10535)
 - "EMPRESS. XII. Statistics on the Dynamics and Gas Mass Fraction of Extremely-Metal Poor Galaxies", Yi Xu, Masami Ouchi, Yuki Isobe, et al. [arXiv:2303.12467](https://arxiv.org/abs/2303.12467)
 <br><br>
 

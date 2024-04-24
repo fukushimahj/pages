@@ -14,7 +14,7 @@ margin: 0px 0px 0px 0px;
 .center_b3{
 width: 800px;
 text-align: left;
-margin: 0px 175px 0px 175px;
+margin: 0px 140px 0px 140px;
 }
 .center_b2{
 width: 800px;

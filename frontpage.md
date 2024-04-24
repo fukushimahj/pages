@@ -7,17 +7,17 @@ list_title: my homepage
 
 <style>
 .center_b{
-width: 1000px;
+width: 800px;
 text-align: center;
 margin: 0px 0px 0px 0px;
 }
 .center_b3{
-width: 1000px;
+width: 800px;
 text-align: left;
 margin: 0px 175px 0px 175px;
 }
 .center_b2{
-width: 1000px;
+width: 800px;
 text-align: center;
 margin: 0px auto 0px auto;
 }

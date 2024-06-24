@@ -7,6 +7,7 @@ title: 活動記録
 # 今後の予定
 
 # 2024
+- 6/24-28, "Formation of massive star cluster under radiative and stellar wind feedback: origins of extremely high N/O ratios and multiple stellar populations", [Cosmic Dawn at High Latitudes Conference](https://indico.fysik.su.se/event/8499/overview)
 - 3/11-15, 天文学会2024春季年会
   - "大質量星団形成における星風による金属量進化", 福島肇, 矢島秀伸 (筑波大学)
   - "超大質量星形成における星周円盤形成後の原始星進化過程", 木村和貴 (東北大学), 細川隆史 (京都大学), 杉村和幸 (北海道大学), 福島肇 (筑波大学), 大向一行 (東北大学)

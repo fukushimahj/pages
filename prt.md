@@ -1,4 +1,4 @@
----
+<img width="886" alt="image" src="https://github.com/user-attachments/assets/de672541-7346-418c-bb3a-4bb4d9cd41f7">---
 permalink: /prt
 layout: page
 title: 活動記録
@@ -7,6 +7,7 @@ title: 活動記録
 # 今後の予定
 
 # 2024
+- 8/6-9, "Formation of massive star cluster under radiative and stellar wind feedback: origins of extremely high N/O ratios and multiple stellar populations", The 10th Galaxy Evolution Workshop
 - 6/24-28, "Formation of massive star cluster under radiative and stellar wind feedback: origins of extremely high N/O ratios and multiple stellar populations", [Cosmic Dawn at High Latitudes Conference](https://indico.fysik.su.se/event/8499/overview)
 - 3/11-15, 天文学会2024春季年会
   - "大質量星団形成における星風による金属量進化", 福島肇, 矢島秀伸 (筑波大学)

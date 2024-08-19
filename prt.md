@@ -1,4 +1,4 @@
-<img width="886" alt="image" src="https://github.com/user-attachments/assets/de672541-7346-418c-bb3a-4bb4d9cd41f7">---
+---
 permalink: /prt
 layout: page
 title: 活動記録

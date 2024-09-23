@@ -7,6 +7,10 @@ title: 活動記録
 # 今後の予定
 
 # 2024
+- 9/11-13, 天文学会2024秋季年会
+  - "原始惑星系円盤への外部輻射の影響", 松本凜, 福島肇
+  - "トレーサー粒子を実装した 3 次元流体力学数値計算に基づく星形成分子雲コアの同定とその時間発展", 野崎信吾, 福島肇, 徳田一起, 町田正博
+- 8/19-22, "高赤方偏移銀河におけるクランプ構造内部の 星・星団形成解明にむけて", 銀河IGM研究会2024, 福島肇(I)
 - 8/6-9, "Formation of massive star cluster under radiative and stellar wind feedback: origins of extremely high N/O ratios and multiple stellar populations", [The 10th Galaxy Evolution Workshop](https://events.asiaa.sinica.edu.tw/workshop/20240806/index.php)
 - 6/24-28, "Formation of massive star cluster under radiative and stellar wind feedback: origins of extremely high N/O ratios and multiple stellar populations", [Cosmic Dawn at High Latitudes Conference](https://indico.fysik.su.se/event/8499/overview)
 - 3/11-15, 天文学会2024春季年会

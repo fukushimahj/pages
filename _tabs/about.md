@@ -19,7 +19,7 @@ order: 1
 
 研究分野: 主に天体形成
 
-業績等: [researchmap](https://researchmap.jp/fukushimahj/), [ADS](https://ui.adsabs.harvard.edu/search/fq=%7B!type%3Daqp%20v%3D%24fq_database%7D&fq_database=database%3A%20astronomy&p_=0&q=pubdate%3A%5B2018-01%20TO%209999-12%5D%20author%3A(%22%5EFukushima%2C%20hajime%22)&sort=date%20desc%2C%20bibcode%20desc?bbbRedirect=1), [TRIOS](https://trios.tsukuba.ac.jp/researcher/0000004676)
+研究業績等: [業績一覧](https://fukushimahj.github.io/pages/categories/%E7%A0%94%E7%A9%B6%E6%A5%AD%E7%B8%BE/), [researchmap](https://researchmap.jp/fukushimahj/), [ADS](https://ui.adsabs.harvard.edu/search/fq=%7B!type%3Daqp%20v%3D%24fq_database%7D&fq_database=database%3A%20astronomy&p_=0&q=pubdate%3A%5B2018-01%20TO%209999-12%5D%20author%3A(%22%5EFukushima%2C%20hajime%22)&sort=date%20desc%2C%20bibcode%20desc?bbbRedirect=1), [TRIOS](https://trios.tsukuba.ac.jp/researcher/0000004676)
 <br><br>
 
 
@@ -42,8 +42,8 @@ order: 1
 (2015/07/01-2017/09/03  東北大学大学院理学研究科 天文学教室 [天体理論グループ](https://www.astr.tohoku.ac.jp/tap/)へ受託 )
 <br><br>
 
-# About me
+# もう少し詳しく
 
-藤枝生まれ葛西育ち、
+藤枝生まれ葛西育ち。
 
 その後、 京都 => 仙台 => 茨木 => つくば  に住んでいます

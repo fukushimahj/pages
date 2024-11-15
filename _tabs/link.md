@@ -11,8 +11,8 @@ order: 5
   - [天体理論グループ](https://www.astr.tohoku.ac.jp/tap/index.html)(東北大学)
 # 学会・研究会
   - [日本天文学会](https://www.asj.or.jp/jp/)
-  - [理論懇シンポジウム](http://rironkon.jp/rironkon_sympo.html)
-  - [初代星・初代銀河研究会](http://tpweb2.phys.konan-u.ac.jp/~shodai/)
+  - 理論懇シンポジウム (http://rironkon.jp/rironkon_sympo.html)
+  - 初代星・初代銀河研究会 (http://tpweb2.phys.konan-u.ac.jp/~shodai/)
 # ゼミ
   - [裏夜ゼミ](https://sites.google.com/view/urayoru-seminar/)
 # ノート

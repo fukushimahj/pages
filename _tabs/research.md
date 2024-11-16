@@ -28,7 +28,7 @@ image: /assets/img/images/SC.png
    autoplay=true
    loop=true
 %}
-## [窒素過剰星団](https://fukushimahj.github.io/pages/posts/YMC-formation/)
+## [窒素過剰星団](https://fukushimahj.github.io/pages/posts/NSC-formation/)
 {% include embed/video.html 
    src='/assets/video/scno.mp4' 
    title='大質量星団形成の様子'

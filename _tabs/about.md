@@ -6,6 +6,7 @@ order: 1
 
 
 ## 所属・連絡先
+![Desktop View](/assets/img/my_picture.jpg){: width="220" height=300" .w-40 .right}
 
 名前: 福島　肇 (Hajime Fukushima)
 

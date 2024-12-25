@@ -6,7 +6,7 @@ order: 3
 
 ## 大学・研究室等
   - [筑波大学計算科学研究センター](https://www.ccs.tsukuba.ac.jp/)
-  - [宇宙物理理論研究室](https://www.rccp.tsukuba.ac.jp/Astro/home/ja/)(筑波大学計算科学研究センター)
+  - [宇宙物理理論研究室](https://www2.ccs.tsukuba.ac.jp/Astro/home/ja/)(筑波大学計算科学研究センター)
   - [天体核研究室](https://www-tap.scphys.kyoto-u.ac.jp/main.html)(京都大学)
   - [天体理論グループ](https://www.astr.tohoku.ac.jp/tap/index.html)(東北大学)
 

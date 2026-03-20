@@ -1,0 +1,34 @@
+site_name: 福島肇のページ
+site_url: https://fukushimahj.github.io/pages/
+
+nav:
+  - ホーム: index.md
+  - CV: cv.md
+  - 研究:
+    - 研究紹介: research_intro.md
+    - 研究業績: research.md
+    - 論文リスト: paper.md
+    - 活動記録: workshop.md
+  - リンク: link.md
+  - メモ: memo.md
+
+theme:
+  name: bootstrap
+  features:
+    - navigation.top   # 左ナビ消す
+  custom_dir: docs/overrides
+
+
+markdown_extensions:
+  - md_in_html
+
+extra_css:
+  - stylesheets/extra.css
+
+plugins:
+  - include-markdown
+
+extra:
+  analytics:
+    provider: google
+    property: G-98HL3J369T

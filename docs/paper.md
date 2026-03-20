@@ -2,7 +2,6 @@
 # 論文リスト
 
 ## Preprints
-- "An Explicit M1 Radiation-hydrodynamics Scheme for Three-dimensional Protostellar Evolution", Kazutaka Kimura, Kazuyuki Sugimura, Takashi Hosokawa, Hajime Fukushima, Kazuyuki Omukai, [arXiv: 2510.13949](https://arxiv.org/abs/2510.13949)
 
 ## Published in refereed journals
 
@@ -33,4 +32,5 @@
 1. "Three-dimensional radiation hydrodynamics simulations of wandering intermediate-mass black holes considering the anisotropic radiation and dust sublimation", Erika Ogata, Ken Ohsuga, Hajime Fukushima, Hidenobu Yajima, MNRAS, 528, 2588 (2024), arXiv:[2402.00369](https://arxiv.org/abs/2402.00369)
 1. "EMPRESS. XII. Statistics on the Dynamics and Gas Mass Fraction of Extremely-Metal Poor Galaxies", Yi Xu, Masami Ouchi, Yuki Isobe, et al. [arXiv:2303.12467](https://arxiv.org/abs/2303.12467), [ADS](https://ui.adsabs.harvard.edu/abs/2024ApJ...961...49X/abstract)
 1. "Tracking Star-Forming Cores as Mass Reservoirs in Clustered and Isolated Regions Using Numerical Passive Tracer Particles", Shingo Nozaki, Hajime Fukushima, Kazuki Tokuda, Masahiro N. Machida, ApJ, 980, 101 (2025), [arXiv:2501.02225](https://arxiv.org/abs/2501.02225), [ADS](https://ui.adsabs.harvard.edu/abs/2025ApJ...980..101N/abstract)
+1. "An Explicit M1 Radiation-hydrodynamics Scheme for Three-dimensional Protostellar Evolution", Kazutaka Kimura, Kazuyuki Sugimura, Takashi Hosokawa, Hajime Fukushima, Kazuyuki Omukai, ApJ, 999, 257 (2026), [arXiv: 2510.13949](https://arxiv.org/abs/2510.13949), [ADS](https://ui.adsabs.harvard.edu/abs/2026ApJ...999..257K/abstract)
 

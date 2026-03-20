@@ -27,3 +27,8 @@ extra_css:
 
 plugins:
   - include-markdown
+
+extra:
+  analytics:
+    provider: google
+    property: G-H0C5RXK0FL

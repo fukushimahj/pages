@@ -103,6 +103,54 @@ kernel内部では、`threadIdx.x`はスレッドがブロック内部でのID, 
 
 # デバイスでのメモリー確保: cudaMalloc, cudaFree
 
+次にcudaで、デバイス上のメモリーを用いて配列を定義する方法についてみていきます。
+メモリーの確保は`cudaMalloc`、その開放は`cudaFree`という関数を用います。
+それでは、具体的にその使用方法を見ていきましょう。
+
+```
+#include <cuda_runtime.h>
+#include <stdio.h>
+
+__global__ void get_thread_id(int *d_array){
+  int nthread = blockIdx.x*blockDim.x + threadIdx.x;
+  d_array[nthread] = 2*nthread;
+}
+
+__global__ void test_output(int *d_array){
+  int nthread = blockIdx.x*blockDim.x + threadIdx.x;
+  printf("nthread:%d array=%d \n", nthread, d_array[nthread]);
+}
+
+
+int main(void){
+
+  int n_block = 32;
+  int n_grid  = 8;
+  dim3 block(n_block);
+  dim3 grid(n_grid);
+
+  int *d_array;
+  
+  // メモリーの確保
+  cudaMalloc(&d_array, sizeof(int)*n_block*n_grid);
+
+  get_thread_id<<<grid,block,0>>>(d_array);
+  test_output<<<grid,block,0>>>(d_array);
+
+  cudaFree(d_array);
+
+  cudaDeviceSynchronize();
+  cudaDeviceReset();
+
+}
+```
+
+上のコードは`cudaMalloc`を使用してデバイス上に配列を確保しています。この際、配列のポインターは`d_array`というポインター変数に格納されます。
+ここで重要なことは、`d_arrray`という変数はホスト上で定義されていますが、そのポインターが示すメモリーはデバイス上にあるという点です。
+ホスト上からは通常、デバイス上のメモリーの値を見ることはできないため（その逆も）、ホスト上で`d_array[0]`などの値を確認しようとするとエラーとなります。
+また、確保した領域は自動では削除されないため、かならず`cudaFree`を実行する必要があります。
+
+
 # デバイスメモリーのコピー: cudaMemcpy
 
 # ストリーム

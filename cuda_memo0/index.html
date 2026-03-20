@@ -243,7 +243,7 @@ __global__ void test_output(int *d_array){
 int main(void){
 
   int n_block = 32;
-  int n_grid  = 8
+  int n_grid  = 8;
   dim3 block(n_block);
   dim3 grid(n_grid);
 
@@ -262,6 +262,10 @@ int main(void){
 
 }
 </code></pre>
+<p>上のコードは<code>cudaMalloc</code>を使用してデバイス上に配列を確保しています。この際、配列のポインターは<code>d_array</code>というポインター変数に格納されます。
+ここで重要なことは、<code>d_arrray</code>という変数はホスト上で定義されていますが、そのポインターが示すメモリーはデバイス上にあるという点です。
+ホスト上からは通常、デバイス上のメモリーの値を見ることはできないため（その逆も）、ホスト上で<code>d_array[0]</code>などの値を確認しようとするとエラーとなります。
+また、確保した領域は自動では削除されないため、かならず<code>cudaFree</code>を実行する必要があります。</p>
 <h1 id="cudamemcpy">デバイスメモリーのコピー: cudaMemcpy</h1>
 <h1 id="_2">ストリーム</h1>
 <h2 id="_3">ストリームとイベントの作成</h2>

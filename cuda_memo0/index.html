@@ -270,7 +270,8 @@ int main(void){
 <h1 id="cudamemcpy">デバイスメモリのコピー: cudaMemcpy</h1>
 <p>上記に述べたように、<code>cudaMalloc</code>で確保した配列の値は基本的にはデバイス上でしか確認することはできません。
 このため、ホストとデバイス間で値を通信する関数<code>cudaMemcpy</code>が用意されています。</p>
-<pre><code>#include &lt;cuda_runtime.h&gt;
+<pre><code>#include &lt;iostream&gt;
+#include &lt;cuda_runtime.h&gt;
 #include &lt;stdio.h&gt;
 
 __global__ void get_thread_id(int *d_array){

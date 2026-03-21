@@ -327,6 +327,8 @@ int main(void){
 
 }
 </code></pre>
+<p><code>cudaMemcpy</code>では、受信側のポインタ、送信側のポインタの順で設定します。
+また、ホストからデバイスに送るときには<code>cudaMemcpyHostToDevice</code>, デバイスからホストに送るときには<code>cudaMemcpyDeviceToHost</code>を指定する必要があります。</p>
 <h1 id="_2">ストリーム</h1>
 <h2 id="_3">ストリームとイベントの作成</h2>
 <h2 id="cudastreamsynchronize">ストリームの同期: cudaStreamSynchronize</h2>

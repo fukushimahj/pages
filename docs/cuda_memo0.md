@@ -1,4 +1,3 @@
-
 cuda コーディングを学習する際のメモです。
 
 # Hello, world!
@@ -101,10 +100,10 @@ kernel内部では、`threadIdx.x`はスレッドがブロック内部でのID, 
 コードにあるように`blockIdx.x*blockDim.x + threadIdx.x`。
 似た方法で、ブロック、グリッドともに２次元・３次元構造として設定することも可能です。
 
-# デバイスでのメモリー確保: cudaMalloc, cudaFree
+# デバイスでのメモリ確保: cudaMalloc, cudaFree
 
-次にcudaで、デバイス上のメモリーを用いて配列を定義する方法についてみていきます。
-メモリーの確保は`cudaMalloc`、その開放は`cudaFree`という関数を用います。
+次にcudaで、デバイス上のメモリを用いて配列を定義する方法についてみていきます。
+メモリの確保は`cudaMalloc`、その開放は`cudaFree`という関数を用います。
 それでは、具体的にその使用方法を見ていきましょう。
 
 ```
@@ -130,8 +129,8 @@ int main(void){
   dim3 grid(n_grid);
 
   int *d_array;
-  
-  // メモリーの確保
+
+  // メモリの確保
   cudaMalloc(&d_array, sizeof(int)*n_block*n_grid);
 
   get_thread_id<<<grid,block,0>>>(d_array);
@@ -145,13 +144,79 @@ int main(void){
 }
 ```
 
-上のコードは`cudaMalloc`を使用してデバイス上に配列を確保しています。この際、配列のポインターは`d_array`というポインター変数に格納されます。
-ここで重要なことは、`d_arrray`という変数はホスト上で定義されていますが、そのポインターが示すメモリーはデバイス上にあるという点です。
-ホスト上からは通常、デバイス上のメモリーの値を見ることはできないため（その逆も）、ホスト上で`d_array[0]`などの値を確認しようとするとエラーとなります。
+上のコードは`cudaMalloc`を使用してデバイス上に配列を確保しています。この際、配列のポインタは`d_array`というポインタ変数に格納されます。
+ここで重要なことは、`d_arrray`という変数はホスト上で定義されていますが、そのポインタが示すメモリはデバイス上にあるという点です。
+ホスト上からは通常、デバイス上のメモリの値を見ることはできないため（その逆も）、ホスト上で`d_array[0]`などの値を確認しようとするとエラーとなります。
 また、確保した領域は自動では削除されないため、かならず`cudaFree`を実行する必要があります。
 
+上では、整数型の配列を`cudaMalloc`によりメモリを確保しましたが、他の実数型なども`cudaMalloc(&d_array, sizeof(double))`などで確保することが可能です。
 
-# デバイスメモリーのコピー: cudaMemcpy
+# デバイスメモリのコピー: cudaMemcpy
+
+上記に述べたように、`cudaMalloc`で確保した配列の値は基本的にはデバイス上でしか確認することはできません。
+このため、ホストとデバイス間で値を通信する関数`cudaMemcpy`が用意されています。
+
+```
+#include <iostream>
+#include <cuda_runtime.h>
+#include <stdio.h>
+
+__global__ void get_thread_id(int *d_array){
+  int nthread = blockIdx.x*blockDim.x + threadIdx.x;
+  d_array[nthread] += 2;
+}
+
+__global__ void test_output(int *d_array){
+  int nthread = blockIdx.x*blockDim.x + threadIdx.x;
+  printf("nthread:%d array=%d \n", nthread, d_array[nthread]);
+}
+
+
+int main(void){
+
+  int n_block = 32;
+  int n_grid  = 8;
+  dim3 block(n_block);
+  dim3 grid(n_grid);
+
+  int *d_array;
+  int *h_array;
+
+  // メモリの確保
+  int n_array = n_block*n_grid;
+  cudaMalloc(&d_array, sizeof(int)*n_array);
+  h_array = new int[n_array];
+
+  // 初期値代入
+  for(int i=0; i<n_array; i++){
+    h_array[i] = i;
+  }
+
+  // host からdeviceへ転送
+  cudaMemcpy(d_array, h_array, sizeof(int)*n_array, cudaMemcpyHostToDevice);
+
+  test_output<<<grid,block,0>>>(d_array);
+  get_thread_id<<<grid,block,0>>>(d_array);
+
+  // deviceからhostへ転送
+  cudaMemcpy(h_array, d_array, sizeof(int)*n_array, cudaMemcpyDeviceToHost);
+
+  for(int i=0; i<n_array; i++){
+    std::cout << i << " " << h_array[i] << std::endl;
+  }
+
+  // メモリの削除
+  cudaFree(d_array);
+  delete h_array;
+
+  cudaDeviceSynchronize();
+  cudaDeviceReset();
+
+}
+```
+
+`cudaMemcpy`では、受信側のポインタ、送信側のポインタの順で設定します。
+また、ホストからデバイスに送るときには`cudaMemcpyHostToDevice`, デバイスからホストに送るときには`cudaMemcpyDeviceToHost`を指定する必要があります。
 
 # ストリーム
 
@@ -161,4 +226,4 @@ int main(void){
 
 ## ストリームの待機: cudaStreamWaitEvent
 
-## ストリームを使ったメモリー確保、コピー: cudaMemcpyAsync
+## ストリームを使ったメモリ確保、コピー: cudaMemcpyAsync

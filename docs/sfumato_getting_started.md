@@ -13,7 +13,7 @@ git clone git@github.com:fukushimahj/SFUMATO_sharp.git
 
 ディレクトリの構造は次のようになっています。
 
-# SFUMATO_sharp ディレクトリ構造
+## SFUMATO_sharp ディレクトリ構造
 ```
 SFUMATO_sharp/
 ├── src/                # ソースコード
@@ -27,4 +27,8 @@ SFUMATO_sharp/
 ```
 コードの実行に関しては、works内部にfolderを作成し、そこで計算を実行する設計になっています。
 
+## 計算の実行までの流れ
 
+shocktubeのテスト計算の実行までの流れを解説し、
+
+### 環境設定

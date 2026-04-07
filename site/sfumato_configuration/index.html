@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
-        <link rel="canonical" href="https://fukushimahj.github.io/pages/sfumato_getting_started/">
+        <link rel="canonical" href="https://fukushimahj.github.io/pages/sfumato_configuration/">
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>スタートガイド - 福島肇のページ</title>
+        <title>環境設定 - 福島肇のページ</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/fontawesome.min.css" rel="stylesheet">
         <link href="../css/brands.min.css" rel="stylesheet">
@@ -105,24 +105,13 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="1"><a href="#_1" class="nav-link">スタートガイド</a>
-              <ul class="nav flex-column">
-            <li class="nav-item" data-bs-level="2"><a href="#_2" class="nav-link">ダウンロード</a>
+            <li class="nav-item" data-bs-level="1"><a href="#_1" class="nav-link">環境設定</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#directory" class="nav-link">Directory</a>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#_2" class="nav-link">各スパコンでの環境設定</a>
               <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="2"><a href="#sfumato_sharp" class="nav-link">SFUMATO_sharp ディレクトリ構造</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="2"><a href="#_3" class="nav-link">計算の実行までの流れ</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
               </ul>
             </li>
         </ul>
@@ -130,30 +119,8 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="_1">スタートガイド</h1>
-<h2 id="_2">ダウンロード</h2>
-<p>Githubからgitを使ってダウンロード可能です(現状はprivate repository)。</p>
-<pre><code>git clone git@github.com:fukushimahj/SFUMATO_sharp.git
-</code></pre>
-<h2 id="directory">Directory</h2>
-<p>ディレクトリの構造は次のようになっています。</p>
-<h2 id="sfumato_sharp">SFUMATO_sharp ディレクトリ構造</h2>
-<pre><code>SFUMATO_sharp/
-├── src/                # ソースコード
-├── julia/              # 解析用スクリプト・ファイル
-├── Configs/            # 環境設定用ファイル
-└── works/              # 各テスト計算を格納
-    ├── shocktube/      # 衝撃波管問題 (Shock tube)
-    ├── HII/            # 電離領域の膨張 (HII region expansion)
-    ├── BE/             # Bonnor-Ebert 球 (Bonnor-Ebert sphere)
-    ├── GMC/            # 巨大分子雲・星団形成 (Giant Molecular Cloud)
-    └── Configs/        # 各スパコンでのConfiguration.defsとmakefile
-</code></pre>
-<p>コードの実行に関しては、works内部にfolderを作成し、そこで計算を実行する設計になっています。</p>
-<h2 id="_3">計算の実行までの流れ</h2>
-<p>shocktubeのテスト計算を通して、環境設定から計算実行、図示するところまでを解説します。</p>
-<h3 id="_4">環境設定</h3>
-<p>まず、<code>./works/shocktube</code>へ移動し、<code>Configuration.defs</code>を開きます。</p>
+<h1 id="_1">環境設定</h1>
+<p>環境設定は、<code>Configuration.defs</code>で行う。</p>
 <pre><code>#################################################
 ##                                             ##
 ##             Configuration file              ##
@@ -161,32 +128,48 @@
 #################################################
 SFUMATO_DIR   = /home/hogehoge/SFUMATO_sharp
 SRC_DIR       = $(SFUMATO_DIR)/src
-WORK_DIR      = $(SFUMATO_DIR)/works/shocktube
+WORK_DIR      = $(SFUMATO_DIR)/works/GMC
 DATA_DIR      = $(WORK_DIR)/data
+CUDA_INSTALL_PATH = /usr/local/cuda
 
-</code></pre>
-<p>上で示すように、<code>SFUMATO_DIR</code>にSFUMATO_sharpへの絶対パスを設定してください。
-環境設定の詳細については、<a href="../sfumato_configuration/">こちら</a>もご覧ください。</p>
-<h3 id="_5">コンパイル &amp; 実行</h3>
-<p>コンパイルは</p>
-<pre><code>make (並列でコンパイルしたい場合は make -j 12など)
-</code></pre>
-<p>問題がなければ、<code>sfumato</code> という実行ファイルが生成される。
-計算の実行は次のコードにより実行する。</p>
-<pre><code>mpirun -np 1 ./sfumato 2&gt;&amp;1 | tee -a stdout
-</code></pre>
-<p>計算を実行すると、<code>./data/</code>内に、<code>cb*</code>というファイルが出力される。</p>
-<h3 id="_6">計算結果を出力する</h3>
-<p>計算結果の可視化はすべて<a href="https://julialang.org/">julia</a> を使用して実行します。
-インストール方法などはこちらを参照してください。</p>
-<pre><code>julia julia/plot.jl
-</code></pre>
-<p>このコードにより以下のようなshocktube問題の結果が図示できれば、計算がうまくいっています。</p>
-<video controls width="800">
+GENCODE_SM80    := -gencode arch=compute_80,code=sm_80
+GENCODE_SM90    := -gencode arch=compute_90,code=sm_90
+GENCODE_FLAGS   := $(GENCODE_SM80) $(GENCODE_SM90)
 
-  <source src="https://fukushimahj.github.io/pages/movie/shocktube.mp4" type="video/mp4">
-</video>
 
+#################
+# Compiler     ##
+#################
+NVCC  = nvcc
+CC    = mpic++
+
+CFLAGS     = -std=c++11
+MPICFLAGS  = -I${MPI_HOME}/include
+CUDACFLAGS = -I${CUDA_INSTALL_PATH}/include
+
+NVCCFLAGS   = $(GENCODE_FLAGS) --default-stream per-thread -std=c++11 -lmpi -lcudadevrt -lcudart -Xcompiler -fopenmp
+CUDALDFLAGS = -I${CUDA_INSTALL_PATH}/include -L${CUDA_INSTALL_PATH}/lib64 -lcudart -lgomp
+
+################
+# Options     ##
+################
+INCLUDE_SELF_GRAVITY = 1      # if 1 == ON
+INCLUDE_CHEMISTRY    = 1
+INCLUDE_RADTR        = 1
+</code></pre>
+<p><br>
+各項目の詳細は以下のようになります(Compiler option除く)。</p>
+<p><code>SFUMATO_DIR</code> 計算実行するSFUMATOのdirectoryへの絶対パス</p>
+<p><code>SRC_DIR SRC</code> directoryへの絶対パス。異なるsrcで計算したい場合は変更する</p>
+<p><code>WORK_DIR</code> 計算を実行するdirectoryへの絶対パス</p>
+<p><code>DATA_DIR</code> データを保存するdirectoryへの絶対パス</p>
+<p><code>CUDA_INSTALL_PATH</code> cudaのインストール先、cfcaのGPUなど、指定しなくて良い場合もある</p>
+<p><code>GENCODE_FLAGS</code> NVIDIAのGPUで実行する際に計算を実行するGPUにあったarchitecturesを指定する。詳細については こちら を確認して、計算実行するGPUにあったものを選択する。</p>
+<p><code>INCLUDE_SELF_GRAVITY</code> 自己重力を含める場合は1を指定　(それ以外は0)</p>
+<p><code>INCLUDE_CHEMISTRY</code> 化学計算を含める場合は1を指定　(それ以外は0)</p>
+<p><code>INCLUDE_RADTR</code> 輻射輸送を含める場合は1を指定　(それ以外は0)</p>
+<p><code>GETCODE_FLAGS</code> 使用するGPUごとに、どの世代のGPUを指定する必要がある。詳細は、<a href="https://arnon.dk/matching-sm-architectures-arch-and-gencode-for-various-nvidia-cards/">こちら</a>を参照してください。</p>
+<h1 id="_2">各スパコンでの環境設定</h1>
 <p><br>
 <a href="../sfumato_manual/">マニュアルへ戻る</a></p></div>
             </div>

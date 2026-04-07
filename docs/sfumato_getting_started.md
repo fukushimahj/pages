@@ -85,5 +85,9 @@ julia julia/plot.jl
   <source src="https://fukushimahj.github.io/pages/movie/shocktube.mp4" type="video/mp4">
 </video>
 
+また、衝撃波管問題の解析解との比較用に、`./julia/shock_tube.jl` (解析解導出)と`./julia/shockbube.ipynb` (jupyterlabのファイル, 図示用)も用意しているので活用してください。
+
+これで、一通りの計算までの流れについての説明は終わりです。各設定の詳細については、マニュアルのページからご覧ください。
+
 <br>
 [マニュアルへ戻る](sfumato_manual.md)

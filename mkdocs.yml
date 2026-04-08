@@ -5,19 +5,18 @@ nav:
   - ホーム: index.md
   - CV: cv.md
   - 研究:
-    - 研究紹介: research_intro.md
-    - 研究業績: research.md
-    - 論文リスト: paper.md
-    - 活動記録: workshop.md
+      - 研究紹介: research_intro.md
+      - 研究業績: research.md
+      - 論文リスト: paper.md
+      - 活動記録: workshop.md
   - リンク: link.md
   - メモ: memo.md
 
 theme:
   name: bootstrap
   features:
-    - navigation.top   # 左ナビ消す
+    - navigation.top # 左ナビ消す
   custom_dir: docs/overrides
-
 
 markdown_extensions:
   - md_in_html
@@ -27,3 +26,10 @@ extra_css:
 
 plugins:
   - include-markdown
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js

@@ -71,6 +71,7 @@ INCLUDE_RADTR        = 1
 ## 更新日時
 
 - miyabi: 260407
+- g01: 260408
 
 <br>
 [マニュアルへ戻る](sfumato_manual.md)

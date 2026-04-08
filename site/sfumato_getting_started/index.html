@@ -188,9 +188,126 @@ DATA_DIR      = $(WORK_DIR)/data
 </video>
 
 <p>また、衝撃波管問題の解析解との比較用に、<code>./julia/shock_tube.jl</code> (解析解導出)と<code>./julia/shockbube.ipynb</code> (jupyterlabのファイル, 図示用)も用意しているので活用してください。</p>
+<h3 id="_7">解像度を変更する</h3>
+<p>上の計算では、 <span class="arithmatex">\(64^3\)</span>の一様格子を設置していましたが、これを変更してみます。
+計算の設定の変更は主に、<code>model.hpp</code>で行います。
+このファイルのgridという項目に、</p>
+<pre><code>/*------------------------*/
+/*        grid            */
+/*------------------------*/
+#define N_GHOST_CELL 2        // number of ghost cell
+
+#define Ni           8        // grid cell number
+#define Nj           8
+#define Nk           8
+
+#define NGI_BASE     8
+#define NGJ_BASE     8
+#define NGK_BASE     8
+
+#define NL           1       // maximum level of refinement
+</code></pre>
+<p>とあります。
+SFUMATOが採用しているAMRは、<code>Ni</code> <span class="arithmatex">\(\times\)</span> <code>Nj</code> <span class="arithmatex">\(\times\)</span> <code>Nk</code>のブロック構造を単位として、空間上に格子を設置する方式を採用しています。
+また、AMR機能がONとなるときは、一つのブロック構造を８分割して、セルサイズが<span class="arithmatex">\(1/2\)</span>の８つのブロックを生成します。新しく生成されたブロックも<code>Ni</code> <span class="arithmatex">\(\times\)</span> <code>Nj</code> <span class="arithmatex">\(\times\)</span> <code>Nk</code>のセルを保持しています。
+<code>NGI_BASE</code>, <code>NGJ_BASE</code>, <code>NGK_BASE</code>は最も粗いlevel (Level=0)で上のブロックを各方向に何個並べるかを指定します。
+ですので、上記の場合は<span class="arithmatex">\(64^3\)</span>の一様格子の設定となります。
+例えば、これを</p>
+<pre><code>/*------------------------*/
+/*        grid            */
+/*------------------------*/
+#define N_GHOST_CELL 2        // number of ghost cell
+
+#define Ni           8        // grid cell number
+#define Nj           8
+#define Nk           8
+
+#define NGI_BASE     16
+#define NGJ_BASE     16
+#define NGK_BASE     16
+
+#define NL           1       // maximum level of refinement
+</code></pre>
+<p>とすると、<span class="arithmatex">\(128^3\)</span>の計算が可能となります。
+ヘッダーファイルを変更した場合は、<code>make clean</code> &amp; <code>make</code>を再度実行する必要があります。</p>
+<p>この際、出力されるデータのサイズについても変更する必要があります。
+<code>model.hpp</code>の<code>modelParameter</code>という名前空間に、<code>ncout</code>という変数があります。
+これは、出力されるデータのサイズを制御するパラメータで、計算で用いる格子サイズと合わせて<code>constexpr INT32 ncout = 128;</code>へ変更する必要があります。
+あとの計算実行から、図に出力するまでの作業は同じです。</p>
+<h3 id="nested-grid">Nested gridで計算する</h3>
+<p>次に、AMR のrefinement機能をONにして、nested gridでの計算を実行してみます。
+これも<code>model.hpp</code>の以下の機能を編集します。</p>
+<pre><code>/*------------------------*/
+/*        grid            */
+/*------------------------*/
+#define N_GHOST_CELL 2        // number of ghost cell
+
+#define Ni           8        // grid cell number
+#define Nj           8
+#define Nk           8
+
+#define NGI_BASE     8
+#define NGJ_BASE     8
+#define NGK_BASE     8
+
+#define NL           1       // maximum level of refinement
+
+
+/*------------------------*/
+/*  refinement            */
+/*------------------------*/
+#define REFINEMENT          OFF
+#define REFINEMENT_NESTED   OFF
+#define REFINEMENT_JEANS    OFF
+
+#define LMAX0_NEST          2        // level of nsted grid
+#define JEANS_CONST         10       // cell number to resolve a jeans length
+
+#define MERGE_KYOUDAI_MAGO           // if this macro is defined, existence of ancle grid is ensured.
+#define REFINE_NANAME                // if this macro is defined, diagonal grid is also refined
+</code></pre>
+<p>まず、gridの項目の<code>NL</code>はAMR機能をONにしたときの最大レベルを指定します。NLが１の場合は、一様格子を示します。
+<code>REFINEMENT</code>を<code>ON</code>にすると、refinement機能が有効となります。
+現状、nested grid構造を設置する機能と、Jeans長を基準にAMR機能をONにする機能が用意されています。
+nested gridを設置する場合は、<code>REFINEMENT_NESTED</code>を<code>ON</code>にします。また、<code>LMAX0_NEST</code>はnested gridを設置する最大levelを指定します(NLがこの値より大きい場合に有効となる)。
+上の説明をまとめると、次のように<code>model.hpp</code>を編集します。</p>
+<pre><code>/*------------------------*/
+/*        grid            */
+/*------------------------*/
+#define N_GHOST_CELL 2        // number of ghost cell
+
+#define Ni           8        // grid cell number
+#define Nj           8
+#define Nk           8
+
+#define NGI_BASE     8
+#define NGJ_BASE     8
+#define NGK_BASE     8
+
+#define NL           4 // 1      // maximum level of refinement
+
+
+/*------------------------*/
+/*  refinement            */
+/*------------------------*/
+#define REFINEMENT          ON
+#define REFINEMENT_NESTED   ON
+#define REFINEMENT_JEANS    OFF
+
+#define LMAX0_NEST          4        // level of nsted grid
+#define JEANS_CONST         10       // cell number to resolve a jeans length
+
+#define MERGE_KYOUDAI_MAGO           // if this macro is defined, existence of ancle grid is ensured.
+#define REFINE_NANAME                // if this macro is defined, diagonal grid is also refined
+</code></pre>
+<p>ちなみに、計算結果の出力は<code>cb*</code>という名前のファイルとして生成されます。
+これは計算領域を一様格子、もしくはrefinmentが起こっている場合には、nested grid構造に計算結果からデータを再構築する仕様になっています。
+他にも<code>vr*</code>という、すべての格子データを出力する形式もあります。こちらはAMR機能をONにして計算する際に便利です。
+データの出力形式とその制御に関しては、<a href="../outputdata/">こちら</a>で解説します。</p>
 <p>これで、一通りの計算までの流れについての説明は終わりです。各設定の詳細については、マニュアルのページからご覧ください。</p>
 <p><br>
-<a href="../sfumato_manual/">マニュアルへ戻る</a></p></div>
+<a href="../sfumato_manual/">マニュアルへ戻る</a>
+```</p></div>
             </div>
         </div>
 
@@ -204,6 +321,7 @@ DATA_DIR      = $(WORK_DIR)/data
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
         <script src="../js/base.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
         <div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
     <div class="modal-dialog">

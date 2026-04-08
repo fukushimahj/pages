@@ -15,8 +15,9 @@
 - [環境設定 & 各スパコンでの設定](sfumato_configuration.md)
 - model.hppの設定
 
-## 可視化
+## データ出力 & 可視化
 
+- [データの出力形式について](outputdata.md)
 - HDF5ファイルの作成
 - 図の作成
 - paraviewの使用

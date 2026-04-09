@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
-        <link rel="canonical" href="https://fukushimahj.github.io/pages/outputdata/">
+        <link rel="canonical" href="https://fukushimahj.github.io/pages/model/">
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>データの出力形式について - 福島肇のページ</title>
+        <title>model.hppの設定 - 福島肇のページ</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/fontawesome.min.css" rel="stylesheet">
         <link href="../css/brands.min.css" rel="stylesheet">
@@ -105,18 +105,16 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="1"><a href="#_1" class="nav-link">データの出力形式について</a>
+            <li class="nav-item" data-bs-level="1"><a href="#modelhpp" class="nav-link">model.hppの設定</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#_1" class="nav-link">モデルの名前</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            
-            <li class="nav-item" data-bs-level="1"><a href="#hdf5" class="nav-link">HDF5ファイルの作成</a>
+            <li class="nav-item" data-bs-level="2"><a href="#gpu-vendor" class="nav-link">GPU のvendorの選択</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            
-            <li class="nav-item" data-bs-level="1"><a href="#_2" class="nav-link">図の作成</a>
-              <ul class="nav flex-column">
               </ul>
             </li>
         </ul>
@@ -124,9 +122,55 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="_1">データの出力形式について</h1>
-<h1 id="hdf5">HDF5ファイルの作成</h1>
-<h1 id="_2">図の作成</h1></div>
+<h1 id="modelhpp">model.hppの設定</h1>
+<p>計算の設定は主に、<code>model.hpp</code>で行います。
+以下に主要なオプションについて記載します。
+ただ、問題ごとに固有の名前空間の変数がついている場合があります。</p>
+<h2 id="_1">モデルの名前</h2>
+<pre><code>#define MODEL_NAME      &quot;GMC&quot;          // model name
+</code></pre>
+<p>計算には影響しない</p>
+<h2 id="gpu-vendor">GPU のvendorの選択</h2>
+<pre><code>/*------------------------*/
+/*       GPU TYPES        */
+/*------------------------*/
+#define NVIDIA_GPU_ON  0
+#define AMD_GPU_ON     1
+#define GPU_TYPE_USED   NVIDIA_GPU_ON
+</code></pre>
+<p>現状はNVIDIAかAMDに対応.
+基本的には、GPUの関数はCUDAで記載しているが、　AMDを使用する場合にはHIP用の関数にmacroを使ってこれらの関数を設定している(./src/gpu_vendors.cuhを参照).</p>
+<pre><code>/*------------------------*/
+/*   SYSTEM OPTION        */
+/*------------------------*/
+#define NPE 4 // number of device
+
+
+// MPI PARALLEL
+#define PARALLEL_MPI      /* MPI */
+
+// openmp
+#define PARALLEL_OMP      /* OMP */
+#define OMP_NUM_THREADS_SINK  10    // number of thread for sink
+
+/*------------------------*/
+/*      GPU check         */
+/*------------------------*/
+#define CHECK_GPU               YES
+#define OUTPUT_GPUPROP          YES
+
+/*------------------------*/
+/*  Memory optionas       */
+/*------------------------*/
+//#define MEMORY_ON_HOST
+
+/*------------------------*/
+/*     DEBUG              */
+/*------------------------*/
+#define KERNEL_DEBUG_MODE       OFF
+
+
+</code></pre></div>
             </div>
         </div>
 

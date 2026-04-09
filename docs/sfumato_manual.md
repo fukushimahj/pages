@@ -13,13 +13,11 @@
 ## 各種詳細設定
 
 - [環境設定 & 各スパコンでの設定](sfumato_configuration.md)
-- model.hppの設定
+- [model.hppの設定](model.md)
 
 ## データ出力 & 可視化
 
-- [データの出力形式について](outputdata.md)
-- HDF5ファイルの作成
-- 図の作成
+- [データの出力形式, HDF5ファイルの作成, 図の作成](outputdata.md)
 - paraviewの使用
 
 ## コード解説

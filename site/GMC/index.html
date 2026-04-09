@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
-        <link rel="canonical" href="https://fukushimahj.github.io/pages/outputdata/">
+        <link rel="canonical" href="https://fukushimahj.github.io/pages/GMC/">
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>データの出力形式について - 福島肇のページ</title>
+        <title>巨大分子雲(GMC)計算 - 福島肇のページ</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/fontawesome.min.css" rel="stylesheet">
         <link href="../css/brands.min.css" rel="stylesheet">
@@ -105,18 +105,16 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="1"><a href="#_1" class="nav-link">データの出力形式について</a>
+            <li class="nav-item" data-bs-level="1"><a href="#gmc" class="nav-link">巨大分子雲(GMC)計算</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#_1" class="nav-link">計算の実行まで</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            
-            <li class="nav-item" data-bs-level="1"><a href="#hdf5" class="nav-link">HDF5ファイルの作成</a>
+            <li class="nav-item" data-bs-level="2"><a href="#_2" class="nav-link">図の作成</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            
-            <li class="nav-item" data-bs-level="1"><a href="#_2" class="nav-link">図の作成</a>
-              <ul class="nav flex-column">
               </ul>
             </li>
         </ul>
@@ -124,9 +122,46 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="_1">データの出力形式について</h1>
-<h1 id="hdf5">HDF5ファイルの作成</h1>
-<h1 id="_2">図の作成</h1></div>
+<h1 id="gmc">巨大分子雲(GMC)計算</h1>
+<p>一様密度球+初期乱流速度場を初期条件に星団形成シミュレーションを実行する設定。</p>
+<h2 id="_1">計算の実行まで</h2>
+<p>コンパイル方法などはこれまでと同じ。
+ただし、初期の乱流速度場のデータ(<code>turb.d</code>)をダウンロードして設定する必要がある。
+このファイルは<a href="https://www.dropbox.com/scl/fi/h3f9rvfc4mlommvgu7yw8/turb.d?rlkey=72c1zakllpkeba71ghpmoi9x2&amp;st=41hha76z&amp;dl=0">ここ</a>からダウンロード可能です。</p>
+<p>GMC計算固有のパラメータとして、<code>model.hpp</code>内の名前空間 modelParameter内に</p>
+<pre><code>// Turbulent sphere models
+constexpr REAL Rcl            = 3.e0*unit::cgs_pc/unit::Unit_l;   // radius of cloud
+constexpr REAL Boxsize        = 4.e0*Rcl;                         // Boxsize
+constexpr REAL Mcl            = 1.e3*unit::cgs_msun/unit::Unit_m; // cloud mass
+constexpr REAL alpha          = 1.e0;                             // virial parameter
+constexpr REAL T0             = 10.e0;                  // gas temperature     [K]
+constexpr REAL cs_HI          = unit_func::sqrt(unit::cgs_kb*T0/(unit::cgs_mh*(1.e0+4.e0*unit::cgs_yHe)/(1.e0+unit::cgs_yHe)))/unit::Unit_v;   // isothermal sound speed of HI
+constexpr REAL rho_ext        = 1.e-4;
+</code></pre>
+<p>という変数が追加で設定されている。
+これらは、</p>
+<p><code>Rcl</code> ガス球の半径</p>
+<p><code>Boxsize</code> 計算領域のサイズ (実際はこれの2倍の長さをもつ立方体が設定される)</p>
+<p><code>Mcl</code> ガス球の質量</p>
+<p><code>alpha</code> virial parameter (乱流強度)</p>
+<p><code>T0</code> 初期のガス温度</p>
+<p><code>cs_HI</code> 初期のガスの音速</p>
+<p><code>外部領域の密度</code>　ガス球と比べて何倍の密度のガスを設置するか？</p>
+<p><code>model.hpp</code>の他の設定方法については、<a href="../model/">こちら</a>をご覧ください。</p>
+<h2 id="_2">図の作成</h2>
+<p>GMC計算では、基本的にAMRのcell情報をすべて書き出す、<code>vr*</code>形式でデータが出力されています。
+これを図にするためには、一様格子に変換してから図を作成します。</p>
+<p>一様格子データの作成については、以下のコマンドから行います。</p>
+<pre><code>julia julia/convert_hdf5.jl
+</code></pre>
+<p>このコードを実行すると、h5というディレクトリの中に、hdf5 形式のファイルが生成されます。
+そして、</p>
+<pre><code>julia julia/plot_h5.jl
+</code></pre>
+<p>を実行すると、図がgraph_sigというフォルダーの中に生成されます。
+図の可視化に関しては、<a href="../outputdata/">こちら</a>にも解説を載せています。</p>
+<p><br>
+<a href="../sfumato_manual/">マニュアルへ戻る</a></p></div>
             </div>
         </div>
 

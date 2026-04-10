@@ -72,6 +72,7 @@ INCLUDE_RADTR        = 1
 
 - miyabi: 260407
 - g01: 260408
+- cfca: 260409
 
 <br>
 [マニュアルへ戻る](sfumato_manual.md)

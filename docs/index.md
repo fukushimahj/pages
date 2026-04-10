@@ -1,10 +1,7 @@
-
-
 <div class="two-column" markdown="1">
 <div class="main-content" markdown="1">
 
-
-# 福島肇
+<h1> 福島肇 </h1>
 
 <div class="profile">
   <span class="label">所属：</span>
@@ -62,14 +59,14 @@
 
 <div class="side-box" markdown="1">
 
-# 特集
+<h1> 特集 </h1>
+
 <div class="feature-box">
   <p>最新の研究はこちら(後日掲載予定)</p>
   </div>
 </div>
 
 </div>
-
 
 # ニュース
 
@@ -88,5 +85,3 @@
   <a href="https://www.ccs.tsukuba.ac.jp/research-topic-v13/"> CCS広報インタビュー記事</a>を作成していただきました。
   </span>
 </div>
-
-

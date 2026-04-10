@@ -115,6 +115,38 @@
               <ul class="nav flex-column">
               </ul>
             </li>
+            <li class="nav-item" data-bs-level="2"><a href="#mpi-openmp" class="nav-link">MPI &amp; OpenMP並列</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#gpu" class="nav-link">GPU関連のエラー探査</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_2" class="nav-link">メモリーに関して</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#mpioption" class="nav-link">MPIのOption関連</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#io" class="nav-link">IO関連</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#pinned-memory" class="nav-link">pinned memory 関連</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#timestep" class="nav-link">Timestep</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_3" class="nav-link">グリッド構造</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -139,7 +171,8 @@
 #define GPU_TYPE_USED   NVIDIA_GPU_ON
 </code></pre>
 <p>現状はNVIDIAかAMDに対応.
-基本的には、GPUの関数はCUDAで記載しているが、　AMDを使用する場合にはHIP用の関数にmacroを使ってこれらの関数を設定している(./src/gpu_vendors.cuhを参照).</p>
+基本的には、GPUの関数はCUDAで記載しているが、AMDを使用する場合にはHIP用の関数にmacroを使ってこれらの関数を設定している(./src/gpu_vendors.cuhを参照).</p>
+<h2 id="mpi-openmp">MPI &amp; OpenMP並列</h2>
 <pre><code>/*------------------------*/
 /*   SYSTEM OPTION        */
 /*------------------------*/
@@ -152,25 +185,94 @@
 // openmp
 #define PARALLEL_OMP      /* OMP */
 #define OMP_NUM_THREADS_SINK  10    // number of thread for sink
-
-/*------------------------*/
+</code></pre>
+<p><code>NPE</code> MPI並列数, 1GPUにつき、1CPUランクを使用する設計。</p>
+<p><code>PARALLEL_MPI</code> MPI並列機能をONにする (現状このマクロが有効とする必要あり。今後, MPIを使用せずCUDA/HIP単独で実行可能にする予定)</p>
+<p><code>PARALLEL_OMP</code> OpenMP機能をONにする (化学計算でCPU 機能もONにした場合のみ使用している)</p>
+<p><code>OMP_NUM_THREADS_SINK</code> 使用していないマクロ (後日削除予定)</p>
+<h2 id="gpu">GPU関連のエラー探査</h2>
+<pre><code>/*------------------------*/
 /*      GPU check         */
 /*------------------------*/
 #define CHECK_GPU               YES
 #define OUTPUT_GPUPROP          YES
 
 /*------------------------*/
-/*  Memory optionas       */
-/*------------------------*/
-//#define MEMORY_ON_HOST
-
-/*------------------------*/
 /*     DEBUG              */
 /*------------------------*/
 #define KERNEL_DEBUG_MODE       OFF
+</code></pre>
+<p><code>CHECK_GPU</code> macro <code>CHECK</code>でcuda kernelのエラー探査を実施　(./src/gpulib.cuhで定義)</p>
+<p><code>OUTPUT_GPUPROP</code> 使用するGPUの性能を計算の開始時に表示</p>
+<p><code>KERNEL_DEBUG_MODE</code> 実行中のkernelをターミナル上で表示。一部kernelについては、実行後にcudaDeviceSyncrhonize()を実行し、完了を待つ仕様になっている。</p>
+<h2 id="_2">メモリーに関して</h2>
+<pre><code>/*------------------------*/
+/*  Memory optionas       */
+/*------------------------*/
+//#define MEMORY_ON_HOST
+</code></pre>
+<p><code>MEMORY_ON_HOST</code> このマクロが有効な場合、グリッドの情報はunified memoryとして、ホスト上に確保される。無効な場合はデバイス上で確保する。</p>
+<h2 id="mpioption">MPIのOption関連</h2>
+<pre><code>/*------------------------*/
+/*    option for MPI      */
+/*------------------------*/
+#define PRIMARY_RANK   0 // primary rank
 
+#define FL4OPENMPI     0
+#define FL4MVAPICH2    1
+#define FL4INTEL       2
 
-</code></pre></div>
+#define MPI_OPTION   FL4OPENMPI
+//#define PACKARR_MANAGED           // 転送用のデータはcudaMallocManagedでホスト上に確保される
+</code></pre>
+<p><code>PRIMARY_RANK</code> primary rankの設定。特別な理由がない以外は0にする。</p>
+<p><code>MPI_OPTION</code> 基本は、openmpiの利用を想定しているが、他のmpiを利用したい場合は変更する (MPIとGPUを組み合わせる際の起動時の処理と関連)</p>
+<p><code>PACKARR_MANAGED</code> MPI通信用のメモリーの確保の方法を指定。基本はデバイス上で確保するが、このマクロを有効にすると、unified memoryとして確保する。miyabiでの実行時には、このマクロを有効にしたほうがいいかも(コンパイラー関連のエラーを踏む可能性があり、回避方法があるみたいだが、未対応)</p>
+<h2 id="io">IO関連</h2>
+<pre><code>/* ---------------------- */
+/*          IO            */
+/* ---------------------- */
+#define BLOCKING_IO            OFF
+#define OUTPUT_INTERMEDIATE_FILE
+#define STEP_INTERMEDIATE_FILE   10000
+#define OUTPUT_DATA_CONSTANT_TIME
+</code></pre>
+<p><code>BLOCKING_IO</code> ONの場合、計算引き継ぎ用のファイルの出力時にrankごとに順番に出力。OFFの場合は同時に出力する。</p>
+<p><code>OUTPUT_INTERMEDIATE_FILE</code> 有効の場合、<code>STEP_INTERMEDIATE_FILE</code>で指定されたステップごとに、計算引き継ぎ用のデータを出力する。</p>
+<p><code>OUTPUT_DATA_CONSTANT_TIME</code> 可視化用のデータを一定時間ごとに出力するオプション (adaptive timestep時のみ有効, 出力感覚はmodelParameter::Dtime_ODCTで指定)</p>
+<p>データ出力や引き継ぎ・可視化用のデータ出力に関しては<a href="../outputdata/">こちら</a>もご覧ください。</p>
+<h2 id="pinned-memory">pinned memory 関連</h2>
+<pre><code>/* ---------------------- */
+/*    pinned memory       */
+/* ---------------------- */
+//#define WITHOUT_PINNED_MEMORY
+</code></pre>
+<p>pinned memoryが枯渇する場合に対応するオプションを設立中. (あんまり使える場面ないかも...)</p>
+<h2 id="timestep">Timestep</h2>
+<pre><code>/*------------------------*/
+/*  option for timestep   */
+/*------------------------*/
+#define SINGLE_STEP
+</code></pre>
+<p><code>SINGLE_STEP</code> このオプションが有効時にsingle timestep, 無効時にadaptive timestepモードになる。</p>
+<h2 id="_3">グリッド構造</h2>
+<pre><code>/*------------------------*/
+/*        grid            */
+/*------------------------*/
+#define N_GHOST_CELL 2        // number of ghost cell
+
+#define Ni           8        // grid cell number
+#define Nj           8
+#define Nk           8
+
+#define NGI_BASE     16
+#define NGJ_BASE     16
+#define NGK_BASE     16
+
+#define NL           20       // maximum level of refinement
+</code></pre>
+<p><br>
+<a href="../sfumato_manual/">マニュアルへ戻る</a></p></div>
             </div>
         </div>
 

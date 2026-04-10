@@ -147,6 +147,14 @@
               <ul class="nav flex-column">
               </ul>
             </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_4" class="nav-link">流体関連</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_5" class="nav-link">注意点</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -271,6 +279,44 @@
 
 #define NL           20       // maximum level of refinement
 </code></pre>
+<p><code>N_GHOST_CELL 2</code> ghost cellの数</p>
+<p><code>Ni, Nj, Nk</code> 各グリッドのx, y, z方向の数、現状同じ数になることを仮定している</p>
+<p><code>NGI_BASE, NGJ_BASE, NGK_BASE</code> Level=0におけるグリッドの数</p>
+<p><code>NL</code> refinement levelの最大値</p>
+<h2 id="_4">流体関連</h2>
+<pre><code>/* ---------------------- */
+/*        timestep        */
+/* ---------------------- */
+#define CFL_HYDRO    0.7
+
+/* ---------------------- */
+/*         hydro          */
+/* ---------------------- */
+#define FLUX_ROEM2             // use numerical flux RoeM2
+
+/*------------------------*/
+/*  boundary condition    */
+/*------------------------*/
+#define bd_cond_OUTFLOW     0
+#define bd_cond_PERIODIC    1
+#define BDCONDITION         bd_cond_OUTFLOW
+//#define ZERO_AVERAGE_DENSITY   // used in fmg
+
+/*------------------------*/
+/*  eos solver            */
+/*------------------------*/
+#define EOS_ADIABATIC_KIM   0
+#define EOS_HLLC_minus      1
+#define EOS_SOLVER EOS_HLLC_minus
+</code></pre>
+<p><code>CFL_HYDRO</code> timestepの大きさを決定</p>
+<p><code>FLUX_ROEM2</code> H-correction, Kim+2003, JCP, 185, 342を導入　(これを無効にするオプションは現在準備中)</p>
+<p><code>BDCONDITION</code> 境界条件, 自由端(bd_cond_OUTFLOW)と周期境界(bd_cond_PERIODIC)条件を用意</p>
+<p><code>EOS_SOLVER</code> 流体スキーム</p>
+<h2 id="_5">注意点</h2>
+<ul>
+<li>オリジナル SFUMATOにあったグリッド数の上限値は撤廃.</li>
+</ul>
 <p><br>
 <a href="../sfumato_manual/">マニュアルへ戻る</a></p></div>
             </div>

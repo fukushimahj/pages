@@ -151,7 +151,23 @@
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#_5" class="nav-link">注意点</a>
+            <li class="nav-item" data-bs-level="2"><a href="#refinement" class="nav-link">refinement 関連</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_5" class="nav-link">自己重力</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#floor-nan" class="nav-link">計算Floor設置 &amp; Nan検知</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_6" class="nav-link">計算時間の測定</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_7" class="nav-link">注意点</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -313,7 +329,49 @@
 <p><code>FLUX_ROEM2</code> H-correction, Kim+2003, JCP, 185, 342を導入　(これを無効にするオプションは現在準備中)</p>
 <p><code>BDCONDITION</code> 境界条件, 自由端(bd_cond_OUTFLOW)と周期境界(bd_cond_PERIODIC)条件を用意</p>
 <p><code>EOS_SOLVER</code> 流体スキーム</p>
-<h2 id="_5">注意点</h2>
+<h2 id="refinement">refinement 関連</h2>
+<pre><code>/*------------------------*/
+/*  refinement            */
+/*------------------------*/
+#define REFINEMENT          ON
+#define REFINEMENT_NESTED   ON
+#define REFINEMENT_JEANS    ON
+
+#define LMAX0_NEST          1        // level of nsted grid
+#define JEANS_CONST         16       // cell number to resolve a jeans length
+
+#define MERGE_KYOUDAI_MAGO           // if this macro is defined, existence of ancle grid is ensured.
+#define REFINE_NANAME                // if this macro is defined, diagonal grid is also refined
+</code></pre>
+<p><code>REFINEMENT</code> ONの場合、refinement機能が有効になる, OFFの場合は一様格子が採用される</p>
+<p><code>REFINEMENT_NESTED</code> Nested grid構造を設置</p>
+<p><code>REFINEMENT_JEANS</code> Jeans長によるrefinementを有効にする</p>
+<p><code>LMAX0_NEST</code> nested gridの最大level</p>
+<p><code>JEANS_CONST</code> 1 Jeans長を何セルで解像するかを選択</p>
+<h2 id="_5">自己重力</h2>
+<pre><code>/*------------------------*/
+/*  self gravity          */
+/*------------------------*/
+#define SELF_GRAVITY        ON
+</code></pre>
+<p><code>SELF_GRAVITY</code> ONの場合、自己重力がONになる</p>
+<h2 id="floor-nan">計算Floor設置　&amp; Nan検知</h2>
+<pre><code>/* ---------------------- */
+/* rescue options         */
+/* ---------------------- */
+#define RESCUE_NANINF       ON
+#define RESCUE_FLOOR        ON
+</code></pre>
+<p><code>RESCUE_NANINF</code> ONの場合、Nanの検知を行う</p>
+<p><code>RESCUE_FLOOR</code> 密度、温度、速度に関してfloorを設置 (値は、名前空間　<code>modelParameter</code> で定義)</p>
+<h2 id="_6">計算時間の測定</h2>
+<pre><code>/* -----------------------*/
+/*   count time*/
+/* -----------------------*/
+#define OUTPUT_CALTIME      ON
+</code></pre>
+<p><code>OUTPUT_CALTIME</code> ONの場合、各パートの計算時間の測定を開始する</p>
+<h2 id="_7">注意点</h2>
 <ul>
 <li>オリジナル SFUMATOにあったグリッド数の上限値は撤廃.</li>
 </ul>

@@ -70,6 +70,7 @@
 
 # ニュース
 
+
 <div class="profile">
   <span class="label2">2026-03-20</span>
   <span class="value">

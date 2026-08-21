@@ -62,8 +62,29 @@
 <h1> 特集 </h1>
 
 <div class="feature-box">
-  <p>最新の研究はこちら(後日掲載予定)</p>
-  </div>
+
+  <p class="feature-label">最近の論文</p>
+
+  <p class="feature-title">
+    SFUMATO#: a GPU accelerated code for Self-Gravitational Radiation Hydrodynamics Simulation with Adaptive Mesh Refinement
+  </p>
+
+  <p class="feature-meta">
+    <span class="feature-authors">Hajime Fukushima, Tomoaki Matsumoto</span>
+    <span class="feature-ref">PASJ, 78, 1284 (2026); arXiv:2604.21438</span>
+  </p>
+
+  <p class="feature-desc">
+    AMR 自己重力流体コード SFUMATO を GPU (CUDA/HIP) 向けに再実装した SFUMATO# を紹介した論文です。
+  </p>
+
+  <p class="feature-links">
+    <a href="https://arxiv.org/abs/2604.21438">arXiv</a> ・
+    <a href="https://ui.adsabs.harvard.edu/abs/2026PASJ...78.1284F/abstract">ADS</a> ・
+    <a href="https://academic.oup.com/pasj/article/78/4/1284/8687303">PASJ</a> 
+  </p>
+
+</div>
 </div>
 
 </div>

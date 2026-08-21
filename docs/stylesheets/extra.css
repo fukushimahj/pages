@@ -145,6 +145,60 @@ a:hover {
   margin-top: 10px;
 }
 
+/* --- 特集：見出し・タイトル・書誌情報 --- */
+.feature-label {
+  margin: 0 0 8px;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  color: #888;
+}
+
+.feature-title {
+  margin: 0 0 6px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+/* 著者名・掲載誌・年・arXiv 番号 */
+.feature-meta {
+  margin: 0 0 10px;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #777;
+}
+
+.feature-authors,
+.feature-ref {
+  display: block;
+}
+
+.feature-authors {
+  font-size: 11px;
+}
+
+.feature-ref {
+  color: #8a8a8a;
+}
+
+.feature-desc {
+  margin: 0 0 10px;
+  font-size: 13px;
+  line-height: 1.8;
+  color: #444;
+}
+
+.feature-links {
+  margin: 0;
+  font-size: 13px;
+}
+
+/* リンクは横並びのままにする（.feature-box a の指定を打ち消す） */
+.feature-links a {
+  display: inline;
+  margin-top: 0;
+}
+
 
 /* 2カラム全体 */
 .two-column {

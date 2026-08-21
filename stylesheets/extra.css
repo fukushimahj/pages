@@ -145,6 +145,74 @@ a:hover {
   margin-top: 10px;
 }
 
+/* --- 特集：図とキャプション --- */
+.feature-figure {
+  margin: 0;
+}
+
+.feature-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #e2e2e2;
+  background: #fff;
+}
+
+.feature-figure figcaption {
+  margin-top: 8px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.feature-credit {
+  display: block;
+  margin-top: 4px;
+  font-size: 12px;
+  color: #8a8a8a;
+}
+
+/* 図がまだ置かれていないときの代替表示 */
+.feature-fig-fallback {
+  border: 1px dashed #ccc;
+  background: #fff;
+  padding: 28px 12px;
+  text-align: center;
+  font-size: 13px;
+  line-height: 1.8;
+  color: #888;
+}
+
+.feature-fig-fallback code {
+  font-size: 12px;
+  word-break: break-all;
+}
+
+.feature-title {
+  margin: 14px 0 6px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.feature-desc {
+  margin: 0 0 10px;
+  font-size: 13px;
+  line-height: 1.8;
+  color: #444;
+}
+
+.feature-links {
+  margin: 0;
+  font-size: 13px;
+}
+
+/* リンクは横並びのままにする（.feature-box a の指定を打ち消す） */
+.feature-links a {
+  display: inline;
+  margin-top: 0;
+}
+
 
 /* 2カラム全体 */
 .two-column {

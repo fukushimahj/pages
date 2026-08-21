@@ -173,6 +173,10 @@ a:hover {
   display: block;
 }
 
+.feature-authors {
+  font-size: 11px;
+}
+
 .feature-ref {
   color: #8a8a8a;
 }

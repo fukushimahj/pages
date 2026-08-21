@@ -145,54 +145,36 @@ a:hover {
   margin-top: 10px;
 }
 
-/* --- 特集：図とキャプション --- */
-.feature-figure {
-  margin: 0;
-}
-
-.feature-figure img {
-  display: block;
-  width: 100%;
-  height: auto;
-  border: 1px solid #e2e2e2;
-  background: #fff;
-}
-
-.feature-figure figcaption {
-  margin-top: 8px;
-  font-size: 13px;
-  line-height: 1.6;
-  color: #555;
-}
-
-.feature-credit {
-  display: block;
-  margin-top: 4px;
+/* --- 特集：見出し・タイトル・書誌情報 --- */
+.feature-label {
+  margin: 0 0 8px;
   font-size: 12px;
-  color: #8a8a8a;
-}
-
-/* 図がまだ置かれていないときの代替表示 */
-.feature-fig-fallback {
-  border: 1px dashed #ccc;
-  background: #fff;
-  padding: 28px 12px;
-  text-align: center;
-  font-size: 13px;
-  line-height: 1.8;
+  letter-spacing: 0.08em;
   color: #888;
 }
 
-.feature-fig-fallback code {
-  font-size: 12px;
-  word-break: break-all;
-}
-
 .feature-title {
-  margin: 14px 0 6px;
+  margin: 0 0 6px;
   font-size: 14px;
   font-weight: bold;
   line-height: 1.5;
+}
+
+/* 著者名・掲載誌・年・arXiv 番号 */
+.feature-meta {
+  margin: 0 0 10px;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #777;
+}
+
+.feature-authors,
+.feature-ref {
+  display: block;
+}
+
+.feature-ref {
+  color: #8a8a8a;
 }
 
 .feature-desc {

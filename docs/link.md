@@ -13,7 +13,7 @@ order: 3
 ## 学会・研究会
   - [日本天文学会](https://www.asj.or.jp/jp/)
   - [理論懇シンポジウム](http://rironkon.jp/rironkon_sympo.html)
-  - [初代星・初代銀河研究会](http://tpweb2.phys.konan-u.ac.jp/~shodai/)
+  - [初代星・初代銀河研究会](https://fsfg-jp.github.io/)
 
 ## ゼミ
   - [裏夜ゼミ](https://sites.google.com/view/urayoru-seminar/)

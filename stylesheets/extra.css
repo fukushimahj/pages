@@ -259,3 +259,7 @@ a[rel="prev"],
 a[rel="next"] {
   display: none !important;
 }
+
+/* 表 */
+table { width: 100%; }
+table td:first-child, table th:first-child { white-space: nowrap; }

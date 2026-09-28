@@ -259,3 +259,24 @@ a[rel="prev"],
 a[rel="next"] {
   display: none !important;
 }
+
+/* 表 */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+table th, table td {
+  border: 1px solid #dee2e6;
+  padding: .5rem .75rem;
+}
+table thead th {
+  background: #f1f3f5;
+  border-bottom: 2px solid #adb5bd;
+}
+table tbody tr:nth-child(even) {
+  background: #f8f9fa;
+}
+table td:first-child, table th:first-child {
+  white-space: nowrap;
+}

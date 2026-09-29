@@ -22,7 +22,7 @@
     <tr>
       <td class="text-center text-nowrap">13:30–14:00</td>
       <td class="text-nowrap">新井 涼太郎</td>
-      <td>（未定）</td>
+      <td>モンテカルロ法を用いた有機物生成シミュレーション〜ORCAを用いた改良〜</td>
     </tr>
     <tr>
       <td class="text-center text-nowrap">14:00–14:30</td>

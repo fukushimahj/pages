@@ -220,8 +220,9 @@ int main(void){
 
 # ストリーム
 
-cudaにはカーネル実行に関して、その実行順番を制御するStreamという機能が存在します。
-実はこれまでのkernelは
+cudaにはカーネル実行に関して、その実行順番を制御するstreamという機能が存在します。
+kernelを実行時にstreamを指定することが可能であり、同じstreamを指定されたkernelはhostから実行された順番に実行されるというルールがあります。
+これまでのkernelの実行ではstreamを特に指定していませんでしたが、実はdefault streamと呼ばれるstremを指定して実行されています。
 
 ## ストリームとイベントの作成
 
@@ -230,3 +231,5 @@ cudaにはカーネル実行に関して、その実行順番を制御するStre
 ## ストリームの待機: cudaStreamWaitEvent
 
 ## ストリームを使ったメモリ確保、コピー: cudaMemcpyAsync
+
+## default streamの挙動
